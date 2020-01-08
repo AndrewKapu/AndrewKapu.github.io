@@ -1,0 +1,329 @@
+//Mobile - first
+@include breakpoint(xs) {
+    .header {
+        // @include main_gradient;
+        // background-image: linear-gradient(181deg, #f26a35 0%, #ca2061 100%);
+        // background-image: linear-gradient(to top, #ee3048 0%, #f26a35 100%);
+        //background: url('../img/header_gradient1.png'), url('../img/header_gradient2.png');
+        //background-repeat: no-repeat, no-repeat;        
+        background: url('../img/header_gradient1.png') no-repeat,
+            url('../img/header_gradient2.png') no-repeat;
+        // linear-gradient(181deg, #f26a35 0%, #ca2061 100%, transparent);
+
+        &__logos {
+            font-size: 1rem;
+            padding-top: 22px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &__logos-text {
+            color: $primary-white;
+            font-size: 0.8rem;
+            font-weight: 600;
+
+            &_small {
+                font-size: 0.4rem;
+                width: 54px;
+            }
+
+            &_down {
+                align-self: flex-end;
+            }
+
+            //margin-right
+            &_mr {
+                margin-right: 2px;
+            }
+
+            // margin-left
+            &_ml {
+                margin-left: 8px;
+            }
+        }
+
+        &__logos-item {
+            display: flex;
+            text-decoration: none;
+            align-items: center;
+
+            &_left {
+                margin-right: 50px;
+            }
+
+        }
+
+        &__enterprise-logo {}
+
+        &__logos-img {
+            display: block;
+            padding: 7px;
+            background-color: $primary-white;
+
+            &_left {
+                border-radius: 9px;
+            }
+        }
+
+        &__apps-block {
+            display: flex;
+
+            & a:first-child {
+                margin-right: 4px;
+            }
+        }
+
+        &__drop-down {
+            display: none;
+
+            &_hover:hover {
+                animation: spin infinite 3s linear;
+            }
+
+        }
+
+        &__main-info {
+            margin: 1.4rem 0;
+        }
+
+        &__main-info-h {
+            width: 231px;
+            @include text(1.4rem, 400, $primary-white);
+        }
+
+        &__main-info-p {
+            margin-top: 0.9rem;
+            @include text(1rem, 400, $primary-white);
+        }
+
+        &__advantages {
+
+            &_lg {
+                display: none;
+            }
+        }
+
+        &__advantages-item {
+            display: flex;
+            align-items: center;
+            margin: 0.4rem 0;
+        }
+
+        &__advantages-img {}
+
+        &__advantages-legend {
+            width: 10rem;
+            margin-left: 36px;
+            @include text(0.9rem, 400, $primary-white);
+        }
+
+        &__mobile-banners {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 34px;
+        }
+
+    }
+
+    //Main logo of company
+    .enterprise-logo {
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+    }
+
+    .apps {
+        display: none;
+
+        &_hover:hover {
+            animation: apps-hover infinite 0.5s linear;
+        }
+    }
+
+    //Apps carousel in header
+
+    .apps-carousel {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &__imgs {
+            display: flex;
+            align-items: center;
+            margin-left: -27px;
+        }
+
+        &__imgs-item {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-repeat: no-repeat;
+            flex-wrap: wrap;
+
+            &_iphone {
+                width: 151px;
+                height: 296px;
+                background-image: url('../img/iphone-bg.png');
+                position: relative;
+                left: 36px;
+            }
+
+            &_android {
+                z-index: 1;
+                width: 176px;
+                height: 366px;
+                background-image: url('../img/android-bg.png');
+            }
+        }
+
+        &__btns {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 15px;
+        }
+
+        &__btns-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-decoration: none;
+
+            &:first-child {
+                margin-right: 99px;
+            }
+        }
+
+        &__btns-circle {
+            width: 4px;
+            height: 4px;
+            border: 2px solid #757575;
+            border-radius: 4px;
+            margin-bottom: 15px;
+
+            &_active {
+                background-color: #757575;
+            }
+        }
+
+        &__btns-text {
+            @include text(1rem, 400, #757575);
+
+            &_active {
+                font-weight: 600;
+            }
+        }
+    }
+
+}
+
+//For tablets
+@include breakpoint(sm) {
+    .header {
+        background-image: url('../img/header_gradient1_middle.png'), url('../img/header_gradient2_middle.png');
+        background-repeat: no-repeat, no-repeat;
+        //background-size: cover cover;
+        box-shadow: 0 3px 9px rgba(0, 63, 73, 0.1);
+        //background-color: $primary-orange;
+        grid-template: 64px 1fr / repeat(2, 1fr);
+        display: grid;
+
+        &__logos {
+            padding: 7px 0 7px 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            grid-row-start: 1;
+            grid-row-end: 2;
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+
+
+
+        &__drop-down {
+            display: inline-block;
+        }
+
+        &__apps-block {
+            display: flex;
+        }
+
+        &__mobile-banners {
+            display: none;
+        }
+
+        &__main-info {
+            //width: 461px;
+            grid-row-start: 2;
+            grid-row-end: 3;
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+
+        &__advantages {
+            grid-row-start: 3;
+            grid-row-end: 4;
+        }
+    }
+
+    .apps {
+        display: inline-block;
+    }
+
+    .apps-carousel {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 3;
+        grid-row-end: 4;
+    }
+}
+
+// For desktop
+
+@include breakpoint(lg) {
+    .header {
+
+        &__drop-down {
+            display: none;
+        }
+
+        &__apps-block {
+            margin-left: auto;
+            margin-right: 60px;
+        }
+
+        &__main-info-p {
+            width: 647px;
+        }
+
+        &__advantages {
+
+            display: none;
+
+            &_lg {
+                display: grid;
+                grid-template: repeat(2, 74px) / repeat(2, 300px);
+            }
+        }
+
+        &__advantages-item {}
+
+    }
+}
+
+//Special breakpoints for header background
+//This breakpoints made only for making background image look smooth
+@media (min-width: 688px) {
+    .header {
+        background-image: url('../img/header_gradient1_middle.png'), url('../img/header_gradient2_middle.png');
+        background-repeat: no-repeat, no-repeat;
+    }
+}
+
+@media (min-width: 861px) {
+    .header {
+        background-image: url('../img/header_gradient1_large.png'), url('../img/header_gradient2_large.png');
+        background-repeat: no-repeat, no-repeat;
+        background-position: 1px -300px;
+    }
+}
