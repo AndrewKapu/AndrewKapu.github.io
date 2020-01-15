@@ -1,3 +1,21 @@
 @include breakpoint(xs) {
-    
+    .header {
+        @include text(2.4rem, #000000, 700, null, null, 2.8rem);
+        text-align: center;
+        margin-top: 56px;
+    }
+
+    .main-content-area {
+
+    }
+
+    .sale-block {
+        
+    }
+}
+
+@include breakpoint(sm) {
+    .header {
+        @include text(2.81rem);
+    }
 }

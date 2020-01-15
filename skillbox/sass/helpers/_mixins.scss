@@ -19,3 +19,48 @@
         }
     }
 }
+
+//For text
+@mixin text($size: null, $color: null, $weight: null, $t-transform: null, $text-decoration: null, $line-height: null, $letter-spacing: null, ) {
+    font-size: $size;
+    color: $color;
+    font-weight: $weight;
+    text-transform: $t-transform;
+    text-decoration: $text-decoration;
+    line-height: $line-height;
+    letter-spacing: $letter-spacing;
+}
+//Placeholder styling
+@mixin placeholder($size: null, $weight: null, $color: null, $line-height: null, $t-transform: null) {
+    &::-webkit-input-placeholder {
+        font-size: $size;
+        font-weight: $weight;
+        color: $color;
+        line-height: $line-height;
+        text-transform: $t-transform;
+    }
+
+    &::-moz-placeholder {
+        font-size: $size;
+        line-height: $line-height;
+        font-weight: $weight;
+        color: $color;
+        text-transform: $t-transform;
+    }
+
+    &:-moz-placeholder {
+        font-size: $size;
+        line-height: $line-height;
+        font-weight: $weight;
+        color: $color;
+        text-transform: $t-transform;
+    }
+
+    &:-ms-input-placeholder {
+        font-size: $size;
+        line-height: $line-height;
+        font-weight: $weight;
+        color: $color;
+        text-transform: $t-transform;
+    }
+}

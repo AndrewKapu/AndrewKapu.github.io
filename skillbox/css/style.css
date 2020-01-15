@@ -2,6 +2,8 @@
    v2.0 | 20110126
    License: none (public domain)
 */
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,600,700,900&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,700&display=swap");
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -50,5 +52,344 @@ q:before, q:after {
 table {
   border-collapse: collapse;
   border-spacing: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+@media (min-width: 0px) {
+  .header {
+    font-size: 2.4rem;
+    color: #000000;
+    font-weight: 700;
+    line-height: 2.8rem;
+    text-align: center;
+    margin-top: 56px;
+  }
+}
+
+@media (min-width: 768px) {
+  .header {
+    font-size: 2.81rem;
+  }
+}
+
+@media (min-width: 0px) {
+  .sale-block {
+    position: relative;
+    margin-top: 93px;
+    padding-top: 108px;
+    padding-bottom: 45px;
+    text-align: center;
+    background-color: #3D3BFF;
+  }
+  .sale-block__high-price {
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.4);
+    font-weight: 300;
+  }
+  .sale-block__high-price_big {
+    font-family: 'Roboto Slab';
+    display: block;
+    margin-top: 20px;
+    font-size: 2.25rem;
+  }
+  .sale-block__offer1 {
+    font-size: 1.15rem;
+    color: #FFFFFF;
+    font-weight: 400;
+    margin-top: 35px;
+  }
+  .sale-block__offer1_big {
+    line-height: 3rem;
+    font-size: 3.5rem;
+    font-family: 'Roboto Slab';
+    margin-bottom: 19px;
+  }
+  .sale-block__offer2 {
+    margin-top: 47px;
+    font-size: 1rem;
+    color: #FFFFFF;
+    font-weight: 300;
+  }
+  .sale-block__offer2_big {
+    margin-bottom: 14px;
+    font-size: 2.5rem;
+  }
+  .sale-banner-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .sale-banner {
+    padding: 24px 20px;
+    top: -53px;
+    position: absolute;
+    background-color: #000000;
+  }
+  .sale-banner__text {
+    font-size: 1rem;
+    color: #ffffff;
+    font-weight: 300;
+  }
+  .sale-banner__text_big {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin: 14px 0;
+  }
+  .sale-banner__text_bold {
+    font-weight: 700;
+  }
+  .sale-banner__text_grayed {
+    color: gray;
+  }
+  .sale-banner::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    left: 0;
+    border-left: 60px solid #3D3BFF;
+    border-top: 15px solid black;
+  }
+  .sale-banner::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    right: 0;
+    border-right: 60px solid #3D3BFF;
+    border-top: 15px solid black;
+  }
+  .contacts-area-wrapper {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .contacts-area__heading {
+    font-size: 1.8rem;
+    color: #000000;
+    font-weight: 700;
+    margin-bottom: 26px;
+    margin-top: 40px;
+  }
+  .contacts-area__phones {
+    margin-bottom: 50px;
+  }
+  .contacts-area__phones-item {
+    font-size: 1rem;
+    color: #657195;
+    font-weight: 300;
+  }
+  .contacts-area__phones-item::before {
+    display: inline-block;
+    content: '.';
+    color: #3D3BFF;
+    font-size: 4rem;
+    position: relative;
+    bottom: 2.5px;
+    line-height: 1rem;
+    margin-right: 15px;
+  }
+  .contacts-area__dates {
+    margin: -12px 0;
+  }
+  .contacts-area__dates-text {
+    margin: 12px 0;
+    font-size: 1rem;
+    color: #657195;
+    font-weight: 300;
+  }
+  .contacts-area__dates-text_blue {
+    font-size: 1.2rem;
+    color: #3D3BFF;
+    font-weight: 700;
+  }
+  .form {
+    margin: -18px 0;
+    margin-top: 38px;
+  }
+  .form__checkbox-label {
+    display: block;
+    font-size: 0.81rem;
+    color: #657195;
+    font-weight: 300;
+    position: relative;
+    cursor: pointer;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    padding-left: 44px;
+    padding-top: 4px;
+    margin-bottom: 55px;
+  }
+  .form__checkbox-label_blue {
+    padding-top: 0;
+    padding-left: 0;
+    display: inline;
+    color: #3D3BFF;
+    text-decoration: none;
+  }
+  .form__checkbox {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  .form__checkbox-custom {
+    display: block;
+    width: 24px;
+    height: 24px;
+    border: 2px solid #E6E8F0;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .form__checkbox-custom::after {
+    content: '';
+    position: absolute;
+    display: none;
+  }
+  .form__checkbox:checked ~ .form__checkbox-custom:after {
+    display: block;
+  }
+  .form__checkbox-custom:after {
+    left: 6px;
+    top: 6px;
+    height: 6px;
+    width: 12px;
+    border-bottom: 2px solid #3D3BFF;
+    border-left: 2px solid #3D3BFF;
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+  }
+  .form__button {
+    cursor: pointer;
+    font-size: 1rem;
+    color: #FFFFFF;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    background-color: #3D3BFF;
+    padding: 24px 84px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  .input {
+    width: 100%;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    border: 2px solid #E6E8F0;
+    padding: 26px 0 26px 26px;
+    margin: 18px 0;
+    font-size: 1rem;
+    color: #657195;
+    font-weight: 300;
+  }
+  .input::-webkit-input-placeholder {
+    font-size: 1rem;
+    font-weight: 300;
+    color: #657195;
+  }
+  .input::-moz-placeholder {
+    font-size: 1rem;
+    font-weight: 300;
+    color: #657195;
+  }
+  .input:-moz-placeholder {
+    font-size: 1rem;
+    font-weight: 300;
+    color: #657195;
+  }
+  .input:-ms-input-placeholder {
+    font-size: 1rem;
+    font-weight: 300;
+    color: #657195;
+  }
+}
+
+@media (min-width: 768px) {
+  .sale-block {
+    padding-bottom: 78px;
+  }
+  .sale-block__offer1 {
+    font-size: 1.12rem;
+  }
+  .sale-block__offer1_big {
+    font-size: 5rem;
+  }
+  .sale-block__offer2 {
+    font-size: 1.12rem;
+  }
+  .sale-block__offer2_big {
+    font-size: 3.1rem;
+  }
+  .contacts-area__heading {
+    text-align: center;
+    font-size: 2.3rem;
+  }
+  .contacts-area__dates {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .form__checkbox-label {
+    padding-top: 8px;
+  }
+  .form__checkbox-label-text {
+    text-align: left;
+  }
+  .form__button {
+    width: 100%;
+    cursor: pointer;
+  }
+  .input {
+    width: 100%;
+  }
+}
+
+@media (min-width: 1170px) {
+  .header__heading {
+    font-size: 3.4rem;
+    margin-bottom: 70px;
+  }
+  .main-content-area {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+  .sale-block {
+    margin-top: 0;
+  }
+  .sale-block__offer1 {
+    font-size: 1.43rem;
+  }
+  .contacts-area {
+    padding-bottom: 57px;
+  }
+  .contacts-area__heading {
+    text-align: left;
+  }
+  .form__checkbox-btn-wrapper {
+    display: -ms-grid;
+    display: grid;
+  }
+  .form__checkbox-label {
+    margin-bottom: 0;
+    margin-top: 33px;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 2;
+    grid-row: 2 / 4;
+  }
 }
 /*# sourceMappingURL=style.css.map */

@@ -11,8 +11,103 @@
 
 <body>
     <header class="header">
-        
+        <h2 class="header__heading">Стоимость обучения</h2>
     </header>
+    <div class="main-content-area">
+        <!-- Синий блок со скидкой -->
+        <div class="sale-block">
+            <!-- Черный баннер со скидкой -->
+            <div class="sale-banner-wrapper">
+                <div class="sale-banner">
+                    <span class="sale-banner__text sale-banner__text_bold">
+                        скидка
+                    </span>
+                    <div class="sale-banner__text sale-banner__text_big">
+                        40%
+                    </div>
+                    <span class="sale-banner__text sale-banner__text_grayed">
+                        первым 20
+                    </span>
+                </div>
+            </div>
+            <!-- Черный баннер со скидкой -->
+            <div class="sale-block__high-price">
+                <div>
+                    Полная стоимость курса
+                </div>
+                <s class="sale-block__high-price_big">50 000 &#8381;</s>
+            </div>
+            <div class="sale-block__offer1">
+                <div class="sale-block__offer1_big">
+                    2 900 &#8381;
+                </div>
+                <div>
+                    Рассрочка без первого взноса
+                </div>
+            </div>
+            <div class="sale-block__offer2">
+                <div class="sale-block__offer2_big">
+                    2 900 &#8381;
+                </div>
+                <div>
+                    Первым 20-ти
+                </div>
+            </div>
+        </div>
+        <!-- /Синий блок со скидкой -->
+        <div class="contacts-area-wrapper">
+            <div class="contacts-area">
+                <h2 class="contacts-area__heading">
+                    Запишитесь на курс
+                </h2>
+                <ul class="contacts-area__phones">
+                    <li class="contacts-area__phones-item">Телефон</li>
+                    <li class="contacts-area__phones-item">Телефон</li>
+                    <li class="contacts-area__phones-item">Телефон</li>
+                    <li class="contacts-area__phones-item">Телефон</li>
+                </ul>
+                <div class="contacts-area__dates">
+                    <div class="contacts-area__dates-text">
+                        Старт курса
+                        <span class="contacts-area__dates-text contacts-area__dates-text_blue">
+                            15 июля
+                        </span>
+                    </div>
+                    <div class="contacts-area__dates-text">
+                        Осталось
+                        <span class="contacts-area__dates-text contacts-area__dates-text_blue">
+                            12 мест
+                        </span>
+                    </div>
+                </div>
+                <form action="#" class="form" id="form">
+                    <input type="name" id="name" class="input" placeholder="Имя">
+                    <input type="phone" class="input" id="phone" placeholder="+7(000)000-0000">
+                    <input type="email" class="input" id="email" placeholder="Email">
+                    <div class="form__checkbox-btn-wrapper">
+                        <label for="policy" class="form__checkbox-label">
+                            <input type="checkbox" name="policy" id="policy" class="form__checkbox">
+                            <span class="form__checkbox-custom"></span>
+                            Я согласен с условиями обработки
+                            <a href="#" class="form__checkbox-label form__checkbox-label_blue">персональных данных</a>
+                        </label>
+                        <button type="submit" class="form__button" id="submitBtn">ЗАПИСАТЬСЯ</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="scripts/Validator.js"></script>
+    <script>
+        window.onload = () => {
+            const validator = new Validator({
+                id: 'form',
+                inputIds: ['name', 'phone', 'email'],
+                errMsgContainerClass: 'form__err-msg',
+                submitBtnId: 'submitBtn',
+            });
+        }
+    </script>
 </body>
 
 </html>

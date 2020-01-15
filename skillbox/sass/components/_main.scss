@@ -1,0 +1,330 @@
+@include breakpoint(xs) {
+
+    .main-content-area {}
+
+    .sale-block {
+        position: relative;
+        margin-top: 93px;
+        padding-top: 108px;
+        padding-bottom: 45px;
+        text-align: center;
+        background-color: #3D3BFF;
+
+        &__high-price {
+            @include text(1rem, rgba(255, 255, 255, 0.4), 300);
+
+            &_big {
+                font-family: 'Roboto Slab';
+                display: block;
+                margin-top: 20px;
+                font-size: 2.25rem;
+            }
+        }
+
+        &__offer1 {
+            @include text(1.15rem, #FFFFFF, 400);
+            margin-top: 35px;
+
+            &_big {
+                line-height: 3rem;
+                font-size: 3.5rem;
+                font-family: 'Roboto Slab';
+                margin-bottom: 19px;
+            }
+        }
+
+        &__offer2 {
+            margin-top: 47px;
+            @include text(1rem, #FFFFFF, 300);
+
+            &_big {
+                margin-bottom: 14px;
+                font-size: 2.5rem;
+            }
+        }
+    }
+
+    .sale-banner-wrapper {
+        display: flex;
+        justify-content: center;
+    }
+
+    .sale-banner {
+        padding: 24px 20px;
+        top: -53px;
+        position: absolute;
+        background-color: #000000;
+
+        &__text {
+            @include text(1rem, #ffffff, 300);
+
+            &_big {
+                font-size: 1.8rem;
+                font-weight: 700;
+                margin: 14px 0;
+            }
+
+            &_bold {
+                font-weight: 700;
+            }
+
+            &_grayed {
+                color: gray;
+            }
+        }
+
+        &::before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            width: 0;
+            height: 0;
+            left: 0;
+            border-left: 60px solid #3D3BFF;
+            border-top: 15px solid black;
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            width: 0;
+            height: 0;
+            right: 0;
+            border-right: 60px solid #3D3BFF;
+            border-top: 15px solid black;
+        }
+    }
+
+    .contacts-area-wrapper {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .contacts-area {
+
+
+        &__heading {
+            @include text(1.8rem, #000000, 700);
+            margin-bottom: 26px;
+            margin-top: 40px;
+
+        }
+
+        &__phones {
+            margin-bottom: 50px;
+        }
+
+        &__phones-item {
+            @include text(1rem, #657195, 300);
+        }
+
+        &__phones-item::before {
+            display: inline-block;
+            content: '.';
+            color: #3D3BFF;
+            font-size: 4rem;
+            position: relative;
+            bottom: 2.5px;
+            line-height: 1rem;
+            margin-right: 15px;
+        }
+
+        &__dates {
+            margin: -12px 0;
+        }
+
+        &__dates-text {
+            margin: 12px 0;
+            @include text(1rem, #657195, 300);
+
+            &_blue {
+                @include text(1.2rem, #3D3BFF, 700);
+            }
+        }
+    }
+
+    .form {
+        margin: -18px 0;
+        margin-top: 38px;
+
+        &__checkbox-label {
+            display: block;
+            @include text(0.81rem, #657195, 300);
+            position: relative;
+            cursor: pointer;
+            user-select: none;
+            padding-left: 44px;
+            padding-top: 4px;
+            margin-bottom: 55px;
+
+            &_blue {
+                padding-top: 0;
+                padding-left: 0;
+                display: inline;
+                color: #3D3BFF;
+                text-decoration: none;
+            }
+        }
+
+        &__checkbox {
+            position: absolute;
+            opacity: 0;
+            cursor: pointer;
+            height: 0;
+            width: 0;
+        }
+
+
+        &__checkbox-custom {
+            display: block;
+            width: 24px;
+            height: 24px;
+            border: 2px solid #E6E8F0;
+            position: absolute;
+            top: 0;
+            left: 0;
+
+            &::after {
+                content: '';
+                position: absolute;
+                display: none;
+            }
+        }
+
+        &__checkbox:checked~.form__checkbox-custom:after {
+            display: block;
+        }
+
+        &__checkbox-custom:after {
+            left: 6px;
+            top: 6px;
+            height: 6px;
+            width: 12px;
+            border-bottom: 2px solid #3D3BFF;
+            border-left: 2px solid #3D3BFF;
+            transform: rotate(-45deg);
+        }
+
+        &__button {
+            cursor: pointer;
+            @include text(1rem, #FFFFFF, 600, uppercase, $letter-spacing: 1px);
+            background-color: #3D3BFF;
+            padding: 24px 84px;
+            box-sizing: border-box;
+        }
+        
+    }
+
+    .input {
+        width: 100%;
+        box-sizing: border-box;
+        border: 2px solid #E6E8F0;
+        padding: 26px 0 26px 26px;
+        @include placeholder(1rem, 300, #657195);
+        margin: 18px 0;
+        @include text(1rem, #657195, 300);
+    }
+}
+
+@include breakpoint(sm) {
+    .sale-block {
+        padding-bottom: 78px;
+
+        &__offer1 {
+            font-size: 1.12rem;
+
+            &_big {
+                font-size: 5rem;
+            }
+        }
+
+        &__offer2 {
+            font-size: 1.12rem;
+
+            &_big {
+                font-size: 3.1rem;
+            }
+        }
+    }
+
+    .contacts-area {
+
+        &__heading {
+            text-align: center;
+            font-size: 2.3rem;
+        }
+
+        &__dates {
+            display: flex;
+            justify-content: space-around;
+        }
+    }
+
+    .form {
+
+        &__checkbox-label {
+            padding-top: 8px;
+        }
+
+        &__checkbox-label-text {
+            text-align: left;
+        }
+
+        &__button {
+            width: 100%;
+            cursor: pointer;
+        }
+    }
+
+    .input {
+        width: 100%;
+    }
+}
+
+@include breakpoint(lg) {
+
+    .header {
+
+        &__heading {
+            font-size: 3.4rem;
+            margin-bottom: 70px;
+        }
+    }
+
+    .main-content-area {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .sale-block {
+        margin-top: 0;
+
+        &__offer1 {
+            font-size: 1.43rem;
+        }
+    }
+
+    .contacts-area {
+        padding-bottom: 57px;
+
+        &__heading {
+            text-align: left;
+        }
+    }
+
+    .form {
+
+        // This is only for swapping checkbox and button in form on large screens
+        &__checkbox-btn-wrapper {
+            display: grid;
+        }
+
+        &__checkbox-label {
+            margin-bottom: 0;
+            margin-top: 33px;
+            grid-row: 2 / 4;
+        }
+    }
+ 
+}
