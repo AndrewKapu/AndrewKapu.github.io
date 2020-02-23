@@ -1,0 +1,420 @@
+.the-brand {
+    margin-bottom: 98px;
+    @include flex-positioning(null, center);
+    background-image: url(../img/the-brand-background.jpg);
+    background-repeat: no-repeat;
+    background-color: #e8e8e8;
+    background-position: 140px -53px;
+    height: 600px;
+
+    &__text {
+        text-transform: uppercase;
+        padding-left: 12px;
+        border-left: 12px solid $text-pink;
+
+        &_special {
+            color: $text-pink;
+        }
+    }
+
+    &__text-line1 {
+        @include text(60px, 45px, 900, $text-dark, null, 1.5px);
+        margin-bottom: 20px;
+    }
+
+    &__text-line2 {
+        @include text(40px, 30px, 900, $text-dark, null, 1px);
+    }
+}
+
+.deals {
+    margin: -10px -15px;
+    @include flex-positioning();
+}
+
+.deal {
+    margin: 15px 10px;
+    position: relative;
+
+    &__item {
+        display: block;
+        @include transition(0.3s);
+
+        &_with-background {
+            background-color: #dadad2;
+            height: 261px;
+        }
+
+        &_hover:hover {
+            @include hover-shadow1;
+        }
+    }
+
+    &__img {
+        display: block;
+    }
+
+    &__text-wrapper {
+        position: absolute;
+        top: 26px;
+        padding: 18px;
+        background-color: $primary-white;
+    }
+
+    &__text1 {
+        text-transform: uppercase;
+        margin-bottom: 14px;
+        @include text(18px, 14px, 900, $text-dark, null, null);
+    }
+
+    &__text2 {
+        text-transform: uppercase;
+        @include text(30px, 23px, 900, $text-dark, null, null);
+
+        &_special {
+            color: $primary-pink;
+        }
+    }
+
+}
+
+.featured-items {
+    margin-top: 100px;
+
+    &__text {
+        text-align: center;
+        margin-bottom: 59px;
+    }
+
+    &__h2 {
+        @include text(30px, 23px, 700, $text-dark);
+        margin-bottom: 16px;
+    }
+
+    &__p {
+        @include text(14px, 14px, 400, $text-gray1);
+    }
+}
+
+.products {
+    margin: -20px -15px;
+    @include flex-positioning($flex-flow: row wrap);
+
+    &__item {
+        text-decoration: none;
+        position: relative;
+        margin: 20px 15px;
+        @include transition(0.3s);
+
+
+        &_hover:hover {
+            box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16);
+        }
+
+        &_hover:hover .products__hover {
+            display: flex;
+        }
+
+        &_hover:hover .products__img {
+            filter: brightness(50%);
+        }
+                
+    }
+
+    &__item-link {
+        text-decoration: none;
+    }
+
+    &__img {
+        display: block;
+    }
+
+    &__text {
+        margin-left: 14px;
+        margin-top: 20px;
+        margin-bottom: 21px;
+    }
+
+    &__text-h4 {
+        text-transform: uppercase;
+        margin-bottom: 17px;
+        @include text(13px, 13px, 400, $text-dark);
+    }
+
+    &__text-span {
+        @include text(16px, 16px, 700);
+
+        &_special {
+            color: $text-pink;
+        }
+    }
+
+    &__hover {
+        display: none;
+        justify-content: center;
+
+        &_products-style {
+            position: absolute;
+            top: 149px;
+            width: 100%;
+            justify-content: center;            
+        }
+    }
+
+    &__hover-btn {
+        @include flex-positioning($align-items: center);
+        @include text(13px, 13px, 700, $text-white, none);
+        padding: 10px 9px;
+        border: 1px solid $text-white;
+        border-radius: 3px;
+        position: absolute;
+        top: 98px;
+
+        &_products-style {
+            position: static;
+            width: 20px;
+            padding: 12px 17px;
+
+            &:first-child {
+                margin-right: 9px;
+            }
+        }
+    }
+
+    &__hover-btn-img {
+        margin-right: 8px;
+    }
+
+    &__browse-all-wrapper {
+        text-align: center;
+        margin-top: 79px;
+    }
+
+    &__browse-all {
+        @include text(16px, 16px, 700, $text-white, none);
+        padding: 14px 20px;
+        background-color: $text-pink;
+        @include transition(0.3s);
+
+        i {
+            margin-left: 9px;
+        }
+
+        &_hover:hover {
+            @include hover-shadow1;
+        }
+    }
+}
+
+.offer {
+    margin-top: 113px;
+    margin-bottom: 97px;
+    position: relative;
+    display: flex;
+
+    &__wrapper {
+
+        img {
+            display: block;
+        }
+    }
+
+    &__text {
+        position: absolute;
+        @include text(54px, 54px, 700, $text-white, none, 1.5px);
+        top: 146px;
+        left: 39px;
+    }
+
+    &__text-h3 {
+        @include text($line-height: 42px);
+        margin-bottom: 14px;
+
+        &_special {
+            color: $text-pink;
+        }
+    }
+
+    &__text-h4 {
+        @include text(32px, $line-height: 24px, $letter-spacing: 1px);
+    }
+}
+
+.features {
+    background-color: $text-dark;
+
+
+    &_offer-style {
+        padding-left: 36px;
+        padding-right: 43px;
+    }
+
+    &_products-style {
+        @include flex-positioning(space-between, center);
+    }
+
+    &__img {
+
+        &_offer-style {
+            align-self: flex-start;
+            margin-right: 33px;
+        }
+
+        &_products-style {
+            align-self: center;
+            margin-right: 0;
+        }
+    }
+
+
+    &__block {
+        display: flex;
+
+        &_offer-style {
+            margin-top: 30px;
+            padding-top: 30px;
+        }
+
+        &_products-style {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            margin-bottom: 114px;
+        }
+    }
+
+    &__h4 {
+        @include text(20px, 20px, 700, $text-white);
+        margin-bottom: 17px;
+
+        &_products-style {
+            margin-top: 32px;
+        }
+    }
+
+    &__p {
+        @include text(14px, 24px, 300, $text-white);
+
+        &_offer-style {
+            width: 219px;
+        }
+
+        &_products-style {
+            width: 309px;
+        }
+    }
+}
+
+.subscribe {
+    background: url(../img/review-background.jpg) no-repeat;
+    background-color: #f2f2f2;
+    background-position: top;
+    height: 438px;
+
+    &__wrapper {
+        display: flex;
+    }
+
+    &__review {
+        @include flex-positioning($align-items: center);
+        padding-top: 111px;
+    }
+
+    &__review-p {
+        width: 386px;
+        margin-left: 28px;
+        @include text(16px, 26px, null, $text-dark);
+        font-style: italic;
+    }
+
+    &__review-info {
+        margin-top: 19px;
+        margin-left: 114px;
+    }
+
+    &__review-name {
+        @include text(16px, 13px, 700);
+        margin-bottom: 6px;
+
+        &_special {
+            color: $text-pink
+        }
+    }
+
+    &__review-location {
+        display: block;
+        @include text(12px, 10px, 300, $text-dark);
+    }
+
+    &__review-nav {
+        display: flex;
+        margin: 41px -5px 0px -5px;
+    }
+
+    &__review-nav-link {
+        margin: 0 5px;
+        display: block;
+        width: 38px;
+        height: 4px;
+        background-color: #d6d6d6;
+        @include transition(0.3s);
+
+        &_active {
+            background-color: $text-pink;
+        }
+
+        &_hover:hover {
+            background-color: $text-pink;
+        }
+    }
+
+    &__form-wrapper {
+        margin-top: 148px;
+        margin-left: 165px;
+    }
+
+    &__form-text {
+        @include text($color: $text-dark, $weight: 400);
+        text-align: center;
+        margin-bottom: 35px;
+    }
+
+    &__form-h4 {
+        @include text(24px);
+        margin-bottom: 14px;
+    }
+
+    &__form-p {
+        @include text(14px);
+    }
+
+    &__form {
+        position: relative;
+        @include text(14px, null, 400);
+        width: 334px;
+    }
+
+    &__form-input {
+        padding: 18px 9px 18px 28px;
+        border: none;
+        border-radius: 23px 0 0 23px;
+        background-color: #e1e1e1;
+        @include text($color: $text-dark);
+        width: 229px;
+    }
+
+    &__form-btn {
+        position: absolute;
+        right: -26px;
+        padding: 18px 20px 18px 21px;
+        border: none;
+        background-color: $text-pink;
+        border-radius: 0 23px 23px 0;
+        @include text($color: $text-white);
+        @include transition(0.3s);
+
+        &_hover:hover {
+            @include hover-shadow1;
+        }
+    }
+}

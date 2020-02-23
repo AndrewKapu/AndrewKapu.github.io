@@ -1,0 +1,208 @@
+.product-page-slider {
+    @include flex-positioning(center);
+    position: relative;
+    background-color: #f7f7f7;
+    margin-bottom: 858px;
+
+    &__wrapper {
+        @include flex-positioning(center);
+        position: relative;
+    }
+
+    &__buttons {
+        @include flex-positioning(space-between, center);
+        width: 100%;
+        position: absolute;
+        align-self: center;        
+    }
+
+    &__button {
+        display: block;
+        background-color: #d9d9d9;
+        @include text(14px, null, 400, $text-white, none);
+        padding: 16px 20px;
+        @include transition(0.3s);
+
+        &_hover:hover {
+            background-color: $text-pink;
+        }
+
+        &:first-child {            
+            i {
+                transform: rotate(180deg);
+
+            }
+        }
+        
+    }
+
+    &__info {
+        position: absolute;
+        border: 1px solid $background-gray;
+        padding: 73px 260px 122px;
+        bottom: -192px;
+        @include flex-positioning(null, center, column);
+        bottom: -741px;
+        background-color: #fff;
+
+        &-h {
+            text-transform: uppercase;
+
+            &_big {
+                @include text(18px, null, 700, $text-dark);
+            }
+
+            &_small {
+                @include text(14px, null, 700, $text-dark);
+            }
+        }
+
+        &-p {
+            @include text(14px, 24px, 300, #5e5e5e);
+            width: 618px;
+            margin-top: 67px;
+            margin-bottom: 28px;
+            text-align: center;
+        }
+
+        &-menu {
+            @include flex-positioning(null, center);
+            margin: 15px 0;
+        }
+
+        &-link {
+            display: block;
+            width: 43px;
+            height: 1px;
+            background-color: $text-gray1;
+
+            &_active {
+                height: 3px;
+                width: 63px;
+                background-color: $text-pink;
+            }
+
+            &_hover:hover {
+                background-color: $text-pink;
+            }
+        }
+
+        &-params {
+            margin-left: -44px;
+            margin-top: 28px;
+            margin-bottom: 37px;
+
+            &-item {
+
+                &:nth-child(odd) {
+                    color: $text-gray1;
+                    margin-left: 44px;
+                }
+
+            }
+        }
+
+        &-price {
+            color: $text-pink;
+        }
+
+        &-details-wrapper {
+            @include flex-positioning();
+            margin: 0 -25px;
+            padding-top: 63px;
+            margin-top: 43px;
+            border-top: 1px solid $background-gray;
+        }
+
+        &-details {
+            position: relative;
+            padding: 12px;
+            background-color: #fff;
+            width: 144px;
+            height: 35px;
+            box-sizing: border-box;
+            border: 1px solid #eaeaea;
+
+            &-h {
+                margin-bottom: 16px;
+            }
+
+            &-item {
+                margin: 0 25px;
+            }
+
+            &[open] i {
+                transform: rotate(270deg);
+            }            
+        }
+
+        &-summary {
+            cursor: pointer;            
+            @include text(13px, null, 400, $text-gray1);
+            @include flex-positioning(null, center);
+
+            i {
+                //margin-left: 67p;
+                position: absolute;
+                transform: rotate(90deg);
+                font-size: 12px;
+                right: 9px;
+            }
+
+            &:focus {
+                outline: none;
+            }
+
+            &::-webkit-details-marker {
+                display: none;
+            }
+
+            &-color {
+                display: inline-block;
+                margin-right: 11px;
+                width: 12px;
+                height: 12px;
+                background-color: $text-pink;
+                background-color: $text-pink;
+            }            
+        }
+
+        &-input {
+            border: none;
+            @include text(13px, null, 400, $text-gray1);
+            @include placeholder(13px, null, 400, $text-gray1);
+            border: 1px solid #eaeaea;
+        }
+
+        &-buybtn-wrapper {}
+
+        &-buybtn {
+            @include flex-positioning(null, center);
+            @include text(16px, null, 700, $text-pink, none);
+            border: 1px solid $text-pink;
+            padding: 15px 207px;
+            box-sizing: border-box;
+            margin-top: 28px;
+            @include transition(0.3s);
+
+            &-text {
+                margin-left: 15px;
+            }
+
+            &_hover:hover {
+                @include hover-shadow1;
+            }
+        }
+    }
+}
+
+.additional-products {    
+    margin-bottom: 73px;
+
+    &__h4 {
+        text-transform: uppercase;
+        @include text(24px, null, 700, $text-dark);
+        text-align: center;
+        margin-bottom: 72px;
+    }
+}

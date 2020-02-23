@@ -1,0 +1,48 @@
+/* Reset */
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+// Подключения шрифта
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap');
+// Fontawesome
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css');
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+// Для safari
+// input {
+//     -webkit-appearance: none;
+//     -moz-appearance: none;
+//     appearance: none;
+// }
+
+/*Прижатие футера к подвалу */
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.content {
+    flex: 1 0 auto;
+}
+
+.footer {
+    flex: 0 0 auto;
+}
+
+.container {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+//Отмена синей рамки при фокусе инпутов и нажатии на button
+input:focus,
+button:focus {
+    outline: none;
+}
+
+// Добавление эффекта курсора кнопкам
+button {
+    cursor: pointer;
+}

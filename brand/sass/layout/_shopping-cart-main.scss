@@ -1,0 +1,228 @@
+.main-button {
+    display: inline-block;
+    text-transform: uppercase;
+    @include text(14px, 14px, 700, $text-dark, none);
+    border: 1px solid $background-gray;
+    padding: 20px 40px;
+    background-color: transparent;
+    @include transition(0.3s);
+
+    &_hover:hover {
+        color: $text-white;
+        background-color: $text-pink;
+    }
+}
+
+.main-input {
+    display: block;
+    height: 45px;
+    box-sizing: border-box;
+    @include text(13px, null, 300, $text-gray1);
+    padding: 16px 12px 16px 16px;
+    border: 1px solid $background-gray;
+
+    @include placeholder(13px, null, 300, $text-gray1);
+}
+
+
+.cart-products {
+    margin-top: 90px;
+
+    &__text {
+        @include text(13px, null, 400, $text-dark);
+
+        &_gray {
+            color: $text-gray2;
+            font-weight: 300;
+        }
+    }
+
+    &__headings {
+        @include flex-positioning(space-between);
+        margin-bottom: 20px;
+    }
+
+    &__headings-h4 {
+        text-transform: uppercase;
+        @include text(13px, null, 700, $text-dark);
+
+        &:nth-child(n+2) {
+            align-self: flex-end;
+        }
+    }
+
+    &__headings-right {
+        @include flex-positioning();
+        margin: 0 -49px;
+    }
+
+    &__headings-right-item {
+        margin: 0 49px;
+    }
+
+    &__item {
+        @include flex-positioning();
+        padding: 22px 0;
+        border-top: 1px solid $background-gray;
+
+        &:last-child {
+            border-bottom: 1px solid $background-gray;
+        }
+    }
+
+    &__item-img {
+        display: block;
+    }
+
+    &__item-link {
+        @include transition(0.3s);
+    }
+
+    &__item-link:hover {
+        @include hover-shadow1;
+    }
+
+    &__item-wrapper {
+        @include flex-positioning;
+    }
+
+    &__item-text {
+        padding: 13px 0 0 21px;
+        width: 157px;
+    }
+
+    &__item-text-characteristics {
+        margin-top: 38px;
+    }
+
+    &__item-text-characteristics-pair {
+        line-height: 20px;
+    }
+
+    &__item-text-characteristics-key {
+        margin-right: 10px;
+    }
+
+    &__item-text-characteristics-val {}
+
+    &__item-params {
+        margin-left: 174px;
+        width: 809px;
+        @include flex-positioning(space-between, center);
+    }
+
+    &__item-params-input {
+        box-sizing: border-box;
+        padding: 10px 20px;
+        border: 1px solid $background-gray;
+        width: 54px;
+        height: 30px;
+        @include placeholder(13px, null, 400, $text-gray2);
+    }
+
+    &__btns {
+        @include flex-positioning(space-between, center);
+        padding-top: 44px;
+        border-top: 1px solid $background-gray;
+    }
+}
+
+.checkout-info {
+    margin-top: 63px;
+    margin-bottom: 79px;
+    @include flex-positioning(space-between, flex-start);
+
+    &__heading {
+        text-transform: uppercase;
+        @include text(16px, null, 700, $text-dark);
+        margin-bottom: 22px;
+        &_last-item {
+            margin-bottom: 0;
+            padding-bottom: 22px;            
+        }
+    }
+
+    &__item {
+
+        &:last-child {            
+            padding: 40px;
+            background-color: #f5f3f3;
+        }
+    }
+
+    &__item-main-button {
+        padding: 13px;
+        @include text(11px);
+
+    }
+
+    &__details[open] &__summary-arrow {
+        transform: translate(0, 2px) rotate(180deg);
+    }
+
+    &__summary {
+        &::-webkit-details-marker {
+            display: none;
+        }
+
+        &:focus {
+            outline: none;
+        }
+    }
+
+    &__select-wrapper {
+        position: relative;
+    }
+
+    &__select {
+        appearance: none;
+        background-color: #fff;
+        line-height: 13px;
+        border-radius: 0px;
+        cursor: text;
+
+        &:focus {
+            outline: none;
+        }
+    }
+
+    &__select-arrow {
+        position: absolute;
+        top: 12px;
+        right: 12px;
+        color: $text-gray1;
+    }
+
+    &__main-input {
+        width: 355px;
+        margin: 22px 0;
+    }
+
+    &__price-text-wrapper {
+        text-align: right;
+        border-bottom: 1px solid $background-gray;
+    }
+
+    &__text {
+        @include text(14px, null, 300, $text-dark);
+
+        &_price {
+            text-transform: uppercase;
+            font-size: 11px;
+        }
+    }
+
+    &__total {
+        margin-left: 20px;
+        display: inline-block;
+
+        &_special {
+            color: $text-pink;
+            padding-top: 14px;
+        }
+    }
+
+    &__main-button {
+        margin-top: 17px;        
+    }
+}

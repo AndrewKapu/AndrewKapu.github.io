@@ -1,0 +1,80 @@
+.information-section {
+    margin-top: 109px;
+}
+
+.footer {
+
+    &__info-nav-wrapper {
+        @include flex-positioning(space-between, center);
+    }
+
+    &__brand-info {
+        width: 427px;        
+    }
+
+    &__brand-info-p {                
+        @include text(14px, 24px, 300, $text-gray2);        
+        margin-top: 30px;        
+    }
+    
+    
+
+    &__nav-heading {
+        @include text(18px, 15px, 700, $text-pink);
+        text-transform: uppercase;
+        margin-bottom: 45px;
+    }
+
+    &__nav {
+        
+        li:last-child {
+            a {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    &__nav-link {
+        @include text(16px, 16px, 400, $text-gray2, none);
+        display: block;
+        margin-bottom: 30px; 
+        
+        &_hover:hover {
+            text-decoration: underline;
+        }
+    }
+
+    &__copyright-social-wrapper {        
+        background-color: $background-gray;        
+    }
+
+    &__copyright-social {
+        @include flex-positioning(space-between, center);
+        margin-top: 89px;
+        height: 79px;
+    }
+
+    &__copyright {
+        @include text(16px, 16px, 400, $text-gray2);
+    }
+
+    &__social {
+        @include flex-positioning();
+    }
+
+    &__social-link {
+        @include flex-positioning(center, center);
+        text-decoration: none;        
+        width: 32px;
+        height: 32px;        
+        background-color: $text-white;
+        margin: 0 4px;
+        @include text(16px, null, 400, $secondary-gray);
+        @include transition(0.3s);
+
+        &_hover:hover {
+            color: $text-white;
+            background-color: $text-pink;
+        }
+    }
+}

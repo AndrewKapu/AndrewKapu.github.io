@@ -1,0 +1,322 @@
+.header {
+    height: 100px;
+    @include flex-positioning(space-between, center);
+
+    &__left {
+        height: 100%;
+        @include flex-positioning(space-between, center);
+    }
+
+    &__form {
+        @include flex-positioning($align-items: center);
+        position: relative;
+        margin-left: 37px;
+    }
+
+    &__form-browse {
+        display: block;
+        @include text(14px, 37px, 300, $text-dark, none);
+        border-radius: 3px 0 0 3px;
+        border: 1px solid $third-gray;
+        background-color: #cdcdcc;
+        background-image: linear-gradient(to bottom, #f9f9f9 0%, #f5f5f5 100%);
+        padding: 0px 9px 0px 15px;
+        display: flex;
+        align-items: center;
+        position: relative;
+    }
+
+    &__form-input {
+        box-sizing: border-box;
+        @include text(14px, 35px, 300, $primary-gray);
+        border: 1px solid $third-gray;
+        border-left: none;
+        padding-left: 16px;
+        width: 312px;
+        padding-right: 36px;
+    }
+
+    &__form-submit {
+        background: $text-white; // Для Safari
+        position: absolute;
+        border: none;
+        right: 1px;
+        font-size: 14px;
+        @include text($size: 14px, $color: $text-gray1, $line-height: 37px);
+        border: 1px solid #e6e6e6;
+        border-right: none;
+        padding: 0 11px;
+    }
+
+    &__arrow {
+        display: block;
+        margin-top: -2px;
+        margin-left: 8px;
+    }
+
+    &__right {
+        @include flex-positioning(space-between, center);
+    }
+
+
+    &__cart {
+        display: block;
+        margin-right: 26px;
+        @include transition(0.3s);
+
+        &_hover:hover {
+            @include hover-shadow1;
+        }
+
+        &-wrapper {
+            position: relative;
+            padding: 32px 0;
+
+            &:hover .drop-down-wrapper {
+                display: block;
+            }
+        }
+    }
+
+
+    &__acc-btn {
+        display: flex;
+        padding: 12px 12px 12px 19px;
+        background-color: $text-pink;
+        @include text(14px, 14px, 400, $text-white, none);
+        @include transition(0.3s);
+
+        &_hover:hover {
+            @include hover-shadow1;
+        }
+    }
+
+    &__drop-down-cart-product {
+
+        @include flex-positioning;
+        padding: 20px 0;
+        border-bottom: 1px solid #ededed;
+
+        &-text {
+            padding-top: 10px;
+            padding-left: 14px;
+        }
+
+        &-name {
+            text-transform: uppercase;
+            @include text(12px, null, 700, $text-dark);
+        }
+
+        &-rating {
+            @include text(12px, null, 400, #e4af48);
+            margin: 10px 0;
+            letter-spacing: -2px;
+        }
+
+        &-price-wrapper {
+            @include text(12px, null, 400, $text-pink);
+        }
+
+        // &-del {
+        //     text-decoration: none;
+        //     align-self: center;
+        //     @include text(13px, null, 400, $text-white);
+        //     display: inline-block;
+        //     width: 13px;
+        //     height: 13px;
+        //     background-color: $text-gray1;
+        //     border-radius: 10px;
+        //     @include flex-positioning(center, center);
+        //     padding: 3px;
+        //     margin-left: 55px;
+
+        //     &_hover:hover {
+        //         background-color: $text-pink;
+        //     }
+        // }
+    }
+
+    &__drop-down-cart-total {
+        text-transform: uppercase;
+        @include text(16px, null, 700, $text-dark);
+        @include flex-positioning(space-between);
+        margin-top: 19px;
+        margin-bottom: 32px;
+    }
+
+    &__drop-down-cart-btn {
+        display: block;
+        text-transform: uppercase;
+        @include text(14px, null, 700, $text-dark, none);
+        padding: 19px 74px;
+        border: 1px solid #eaeaea;
+        @include transition(0.3s);
+
+        &_hover:hover {
+            color: $text-pink;
+            border-color: $text-pink;
+        }
+
+        &:last-child {
+            margin-top: 10px;
+        }
+    }
+}
+
+.logo {
+    @include flex-positioning(null, center);
+    @include text(27px, 32px, 300, $text-dark, none);
+
+    &__text {
+        margin-left: 13px;
+    }
+
+    &_special {
+        @include text($color: $text-pink, $weight: 700);
+    }
+}
+
+.nav {
+    border-top: 1px solid #ececec;
+    @include flex-positioning(center);
+
+    &__menu {
+        display: flex;
+        margin: 0 -20px;
+    }
+
+    &__link {
+        display: block;
+        @include text(14px, null, 700, $text-dark, none);
+        text-transform: uppercase;
+        margin: 0 20px;
+        padding: 20px 0;
+        border-bottom: 3px solid transparent;
+        @include transition(0.3s);
+
+        &_hover:hover {
+            border-color: $text-pink;
+        }
+
+        &-wrapper {
+            position: relative;
+
+            &:hover .drop-down-wrapper {
+                display: flex;
+            }
+        }
+    }
+
+}
+
+.drop-down-wrapper {
+    padding: 20px;
+    padding-top: 0;
+    position: absolute;
+    top: 50px;
+    background-color: $text-white;
+    border: 1px solid #e8e8e8;
+    border-radius: 5px;
+    display: none;
+    z-index: 1;
+
+    &_cart-pos {
+        top: 86px;
+        left: -12px;
+        padding-right: 15px;
+        width: 235px;
+    }
+}
+
+.drop-down {
+    margin-right: 46px;
+
+    &:last-child {
+        margin-right: 0;
+    }
+
+    &__h4 {
+        @include text(14px, 14px, 400, $text-dark);
+        padding-bottom: 8px;
+        padding-right: 177px;
+        margin-bottom: 10px;
+        border-bottom: 1px solid #e8e8e8;
+        padding-top: 20px;
+    }
+
+    &__menu {}
+
+    &__link {
+        @include text(14px, 28px, 400, #646464, none);
+
+        &:hover {
+            color: $text-pink;
+        }
+    }
+
+    &__add {
+        position: relative;
+        display: inline-block;
+        margin-top: 22px;
+
+        &_hover:hover {
+            @include hover-shadow1;
+        }
+
+        img {
+            display: block;
+        }
+
+        &-text {
+            position: absolute;
+            @include text(22px, 28px, 400, $text-white, none, 0.55px);
+            right: 10px;
+            bottom: 12px;
+        }
+
+        &-span {
+            display: block;
+        }
+    }
+}
+
+.drop-down-arrow {
+    width: 14px;
+    height: 14px;
+    border-top: 1px solid #e8e8e8;
+    border-left: 1px solid #e8e8e8;
+    position: absolute;
+    background-color: #fff;
+    z-index: 1;
+    top: -8px;
+    left: 51px;
+    transform: rotate(45deg);
+
+    &_cart-pos {
+        left: 23px;
+    }
+}
+
+.product-del-btn {
+
+    text-decoration: none;
+    align-self: center;
+    @include text(13px, null, 400, $text-white);
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    background-color: $text-gray1;
+    border-radius: 10px;
+    @include flex-positioning(center, center);
+    padding: 3px;
+    margin-left: 55px;
+
+    &_hover:hover {
+        background-color: $text-pink;
+    }
+
+    &_cart {
+        margin-left: 0;
+        margin-right: 14px;
+    }
+}
