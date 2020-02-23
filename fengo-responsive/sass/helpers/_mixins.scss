@@ -1,0 +1,98 @@
+//Breakpoints
+@mixin breakpoint($point) {
+    @if $point==xs {
+        @media (min-width: 0px) {
+            @content;
+        }
+    }
+
+    @else if $point==sm {
+        @media (min-width: 768px) {
+            @content;
+        }
+    }
+
+    // @else if $point==md {
+    //     @media (max-width: 980px) {
+    //         @content;
+    //     }
+    // }
+
+    @else if $point==lg {
+        @media (min-width: 1170px) {
+            @content;
+        }
+    }
+}
+
+// Для текста 
+@mixin text($size: null, $weight: null, $color: null, $text-decoration: null, $line-height: null, $t-transform: null, $letter-spacing: null) {
+    font-size: $size;
+    font-weight: $weight;
+    color: $color;
+    text-decoration: $text-decoration;
+    line-height: $line-height;
+    letter-spacing: $letter-spacing;
+    text-transform: $t-transform;
+}
+
+
+@mixin flex-positioning($justify-content: null, $align-items: null, $flex-flow: null) {
+    display: flex;
+    justify-content: $justify-content;
+    align-items: $align-items;
+    flex-flow: $flex-flow;
+}
+
+//Стилизация placeholder
+@mixin placeholder($size: null, $weight: null, $color: null, $line-height: null, $t-transform: null) {
+    &::-webkit-input-placeholder {
+        font-size: $size;
+        font-weight: $weight;
+        color: $color;
+        line-height: $line-height;
+        text-transform: $t-transform;
+    }
+
+    &::-moz-placeholder {
+        font-size: $size;
+        line-height: $line-height;
+        font-weight: $weight;
+        color: $color;
+        text-transform: $t-transform;
+    }
+
+    &:-moz-placeholder {
+        font-size: $size;
+        line-height: $line-height;
+        font-weight: $weight;
+        color: $color;
+        text-transform: $t-transform;
+    }
+
+    &:-ms-input-placeholder {
+        font-size: $size;
+        line-height: $line-height;
+        font-weight: $weight;
+        color: $color;
+        text-transform: $t-transform;
+    }
+}
+
+//Замедление перехода
+@mixin transition($values: null) {
+    transition: $values;
+}
+
+@mixin hover1 {
+    &:hover {
+        background-color: $white;
+        color: $t-dark1;
+    }
+}
+
+@mixin hover2 {
+    &:hover {
+        text-decoration: underline;
+    }
+}

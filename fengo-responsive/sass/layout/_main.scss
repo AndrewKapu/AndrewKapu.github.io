@@ -1,0 +1,636 @@
+.deal-name {
+    @include text(1.625rem, 700, $white, null, null, uppercase, null);
+}
+
+.arrow-right {
+    display: inline-block;
+    font-size: 0.6875rem;
+    margin-left: 4px;
+}
+
+.slider-btns {
+    align-self: center;
+}
+
+.main-h2 {
+    @include text(4.6875rem, 700, $white, null, null, uppercase, null);
+}
+
+.slider-btn {
+    position: absolute;
+    @include flex-positioning(center, center);
+    height: 48px;
+    width: 48px;
+    border-radius: 48px;
+    border: 3px solid $white;
+    text-decoration: none;
+    @include text(18px, $color: $white);
+
+    &:first-child {
+        left: 25px;
+        transform: rotate(180deg);
+    }
+
+    &:last-child {
+        right: 25px;
+    }
+
+    @include hover1;
+}
+
+
+.more-btn {
+    @include flex-positioning(null, center);
+    @include text(0.875rem, 700, $white, none, null, uppercase);
+
+    &__arrow-right {
+        //margin-left: 4px;
+        margin-top: -1px;
+    }
+
+    @include hover2;
+}
+
+.slider-wrapper {
+    display: none;
+    background-color: $bg-gray2;
+    position: relative;
+}
+
+.slider {
+    margin-top: 19px;
+    @include flex-positioning(null, center);
+    flex-wrap: wrap;
+    align-content: center;    
+
+    &__main-h2 {
+        margin: 16px 0;
+    }
+
+    &__deal-name {
+        color: $t-dark4;
+    }
+
+}
+
+.slider-pagination {
+    display: none;
+    width: 100%;
+
+    &__menu {
+        @include flex-positioning();
+        position: absolute;
+        bottom: 22px;
+        margin: 0 -7px;
+    }
+
+    &__link {
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        border: 2px solid $white;
+        border-radius: 7px;
+        margin: 0 7px;
+
+        @include hover1;
+    }
+}
+
+.pay-less-wrapper {
+    background-color: $bg-gray2;
+}
+
+.pay-less {
+    padding: 19px 0;
+    text-align: center;
+
+    &__text {
+        padding: 28px 0;
+        border: 1px solid $white;
+    }
+
+    &__main-h2 {
+        font-size: 2.125rem;
+    }
+
+    &__deal-name {
+        @include text(0.9rem, 400, $white);
+        margin: 13px 0 18px 0;
+    }
+
+    &__more-btn {
+        color: $white;
+        display: block;
+    }
+}
+
+// Предложения - deals
+.deals-wrapper {
+    background-color: #f3f3f3;
+}
+
+.deals {
+    padding-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 10px;
+    padding-bottom: 30px;
+
+    &__block-text-wrapper {
+        @include flex-positioning(center, center);
+        height: 100%;
+
+        &_block2 {
+            @include flex-positioning(center, normal);
+        }
+    }
+
+    &__block1-text {
+        padding: 39px 26px 46px;
+        border: 1px solid #fff;
+        margin: 10px 10px 32px 10px;
+    }
+
+    &__block {
+        background-color: $bg-gray2;
+        text-align: center;
+        position: relative;
+    }
+
+    &__deal-name {
+        font-size: 1.3125rem;
+
+        &_subdeal {
+            font-size: 0.9375rem;
+            font-weight: 400;
+            margin-top: 10px;
+        }
+
+        &_block2 {
+            font-size: 0.875rem;
+            font-weight: 400;
+            color: $t-dark4;
+            text-transform: lowercase;
+        }
+
+        &_dark {
+            color: $t-dark3;
+            margin: 10px 0;
+        }
+
+        &_dark2 {
+            color: $t-dark4;
+        }
+
+        &_block4 {
+            font-weight: 400;
+        }
+
+        &_block5 {
+            font-size: 18px;
+            margin: 19px 0;
+        }
+
+    }
+
+    &__more-btn-wrapper {
+        @include flex-positioning(center);
+    }
+
+    &__more-btn {
+        display: block;
+        position: absolute;
+        bottom: 10px;
+
+        &_block5 {
+            bottom: 51px;
+        }
+    }
+
+    &__block2-text {
+        margin: 30px 0 448px 0;
+    }
+
+    &__main-h2 {
+        font-size: 2.1875rem;
+        margin-bottom: 13px;
+
+        &_block4 {
+            font-size: 1.5625rem;
+        }
+
+        &_block5 {
+            font-size: 1.875rem;
+        }
+
+        &_block6 {
+            font-size: 1.75rem;
+            margin: 83px 0;
+        }
+    }
+
+    &__block3-4-text {
+        margin: 62px 30px 69px;
+    }
+
+    &__block5 {
+        position: relative;
+    }
+
+    &__block5-text {
+        margin-top: 132px;
+        margin-bottom: 172px
+    }
+    
+}
+
+// Products 
+
+.products {
+
+    &__nav {
+        @include text(1rem, 700, $t-dark6, none, null, uppercase);
+        @include flex-positioning(center);
+    }
+
+    &__nav-menu {
+        text-align: center;
+    }
+
+    &__nav-menu-link {
+        display: block;
+        @include text(1rem, 700, $t-gray2, none, null, uppercase);
+        margin-top: 19px;
+
+        &_active {
+            border-bottom: 2px solid $t-dark6;
+            color: $t-dark6;
+            padding-bottom: 9px;
+        }
+
+        &:hover {
+            color: $t-dark6;
+        }
+    }
+
+    &__items {
+        margin-top: 29px;
+        display: grid;
+        grid-row-gap: 46px;
+    }
+
+    &__show-more-wrapper {
+        @include flex-positioning(center);
+        margin-top: 50px;
+    }
+
+    &__show-more {
+        @include text(14px, 700, $t-dark5, none, null, uppercase);
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+// Карточка продукта
+
+.product {
+    max-width: 280px;
+
+    &__link {
+        display: block;
+        text-decoration: none;
+        padding-bottom: 13px;
+    }
+
+    &__img {
+        display: block;
+        text-decoration: none;
+        background-color: $bg-gray2;
+        width: 280px;
+        height: 364px;
+
+        &_footer {
+            max-width: 130px;
+            max-height: 169px;
+        }
+    }
+
+    &__text {
+        @include flex-positioning(space-between);
+        margin-top: 24px;
+    }
+    
+
+    &__text-h {
+        @include text(0.8125rem, 400, $t-dark6, null, null, null);
+
+        &:first-child {
+            margin-bottom: 9px;
+        }
+
+        &_footer {
+            color: $gray4;
+        }
+    }
+
+    &__text-price {
+        @include text(0.9375rem, 700, $t-dark7, null, null, uppercase);
+        &_footer {
+            color: $white;
+        }        
+    }
+
+    &__hover {
+        visibility: hidden;
+    }
+
+    &__hover-block1 {        
+        border: 2px solid $t-dark6;
+        padding: 12px 25px;
+    }
+
+    &__hover-block1-btn {
+        @include text(0.875rem, 700, $t-dark6, none, null, uppercase);
+
+        &:first-child {
+            border-right: 2px solid $t-dark6;
+            padding-right: 24px;
+        }
+
+        &:last-child {
+            padding-left: 24px;
+        }
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    &__hover-block2 {
+        margin-top: 8px;
+        @include flex-positioning(space-between);
+    }
+
+    &__hover-block2-btn {
+        font-style: italic;
+        @include text(0.8125rem, 400, $t-dark3, none);
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    &:hover &__hover {
+        visibility: visible;
+    }
+
+    &_sm {
+        display: none;
+    }
+
+    &_lg {
+        display: none;
+    }
+
+    &:hover {
+        box-shadow: 0px 0px 3px 3px grey;
+    }
+}
+
+@include breakpoint(xs) {
+    .deals {
+        &__slider-pagination {
+            @include flex-positioning(center);
+        }
+    }
+}
+
+// Для планшетов
+@include breakpoint(sm) {
+    .slider-wrapper {
+        display: block;
+    }
+
+    .slider {
+        height: 428px;
+
+        &__text {
+            margin-left: auto;
+            width: 340px;
+        }
+
+        &__more-btn {
+            color: $t-dark3;
+            margin-top: 20px;
+        }
+    }
+
+    .pay-less-wrapper {
+        display: none;
+    }
+
+    .deals {
+        padding-top: 20px;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 266px 154px 154px;
+        grid-gap: 20px;
+
+        &__deal-name {
+            font-size: 0.9375rem;
+        }
+
+        &__block1 {
+            grid-column: 1 / 3;
+        }
+
+        &__block1-text {
+            padding: 47px 65px;
+            margin: 0;
+        }
+
+        &__block2 {
+            grid-row: 1 / 3;
+            grid-column: 3 / 4;
+        }
+
+        &__block2-text {
+            margin: 0;
+            margin-top: 25px;
+        }
+
+        &__block3-4-text {
+            margin: 0 26px;
+        }
+
+        &__block4 {
+            grid-column: 1;
+        }
+
+        &__block5 {
+            grid-row: 2 / 4;
+            grid-column: 2;
+        }
+
+        &__block5-text {
+            margin: 0;
+        }
+
+        &__main-h2_block6 {
+            margin: 0;
+        }
+    }
+
+    .products {
+        margin-top: 51px;
+
+        &__nav-menu {
+            @include flex-positioning(null, center);
+            margin: 0 -35px;
+        }
+
+        &__nav-menu-link {
+            padding-bottom: 9px;
+            border-bottom: 2px solid transparent;
+            margin: 0 35px;
+
+            &_active {
+                border-bottom: 2px solid $t-dark6;
+            }
+
+            &:hover {
+                border-bottom: 2px solid $t-dark6;
+            }
+        }
+
+        &__items {
+            grid-template-columns: repeat(3, 1fr);
+            grid-column-gap: 20px;            
+        }
+
+        &__show-more-wrapper {            
+            margin-top: 75px;
+        }
+    }
+
+    .product {
+        max-width: 228px;
+
+        &__img {
+            width: 228px;
+            height: 296px
+        }
+
+        &__hover-block1 {
+            padding: 12px 10px;
+        }
+
+        &__hover-block1-btn {           
+            &:first-child {                
+                padding-right: 10px;
+            }
+
+            &:last-child {
+                padding-left: 15px;
+            }           
+        }
+
+        &_sm {
+            display: block;
+        }
+    }
+}
+
+
+// Для больших экранов
+@include breakpoint(lg) {
+    .slider {
+        height: 1070px;
+
+        &__text {
+            width: 340px;
+        }
+
+        &__main-h2 {
+            font-size: 6.25rem;
+        }
+    }
+
+    // Slider-pagination
+    .slider-pagination {
+        @include flex-positioning(center);
+        width: 100%;
+
+        &__menu {
+            @include flex-positioning();
+            position: absolute;
+            bottom: 22px;
+            margin: 0 -7px;
+        }
+
+        &__link {
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            border: 2px solid $white;
+            border-radius: 7px;
+            margin: 0 7px;
+
+            @include hover1;
+        }
+    }
+
+    .deals {
+        padding-top: 60px;
+        grid-template-rows: 430px 250px 250px;
+
+        &__main-h2 {
+            font-size: 2.5rem;
+        }
+
+        &__deal-name {
+            font-size: 1.5625rem;
+        }
+    }
+
+    .products {
+
+        &__items {
+            grid-template-columns: repeat(4, 1fr);
+            grid-column-gap: 30px;
+        }
+    }
+
+    .product {
+        max-width: 270px;
+
+        &__img {
+            width: 270px;
+            height: 351px
+        }
+
+        &__hover-block1 {        
+            border: 2px solid $t-dark6;
+            padding: 12px 0px;
+        }
+    
+        &__hover-block1-btn {            
+    
+            &:first-child {                
+                padding: 0 24px;
+            }
+    
+            &:last-child {
+                padding-left: 0 24px;
+            }
+    
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+
+        &_lg {
+            display: block;
+        }
+    }
+}

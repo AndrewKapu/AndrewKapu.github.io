@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Fengo</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- Обертка всего для прижатия подвала -->
+    <div class="wrapper">
+        <div class="content">
+            <!-- Header -->
+            <header class="header">
+                <div class="header__top-panel">
+                    <div class="container">
+                        <div class="header__top-panel-inside">
+                            <nav class="header__top-nav">
+                                <ul class="header__menu-person">
+                                    <li class="header__link-wrapper"><a href="#" class="header__top-nav-link">My
+                                            Account</a></li>
+                                    <li class="header__link-wrapper"><a href="#" class="header__top-nav-link">MY
+                                            Wishlist (0)</a></li>
+                                    <li class="header__link-wrapper"><a href="#"
+                                            class="header__top-nav-link">Checkout</a></li>
+                                    <li class="header__link-wrapper header__link-wrapper_sm-only"><a href="#"
+                                            class="header__top-nav-link ">Log
+                                            In</a></li>
+                                    <li class="header__link-wrapper header__link-wrapper_lg-only"><a href="#"
+                                            class="header__top-nav-link">Log
+                                            In or Register</a></li>
+                                </ul>
+                            </nav>
+                            <nav class="header__top-nav">
+                                <ul class="header__menu-settings">
+                                    <li class="header__link-wrapper"><a href="#" class="header__top-nav-link">US Dollar
+                                            <i class="fas fa-chevron-down arrow-down"></i></a></li>
+                                    <li class="header__link-wrapper"><a href="#" class="header__top-nav-link">English <i
+                                                class="fas fa-chevron-down arrow-down"></i></a></li>
+                                    <li class="header__link-wrapper header__link-wrapper_wider-only"><a href="#"
+                                            class="header__top-nav-link">My Bag: 0 item(s)</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+                <div class="header__search-logo container">
+                    <a href="#" id="fengo" class="logo">
+                        <img class="logo__img" src="img/logo-img.svg" alt="logo">
+                        <h2 class="logo__heading">FENGO</h2>
+                    </a>
+                    <div class="header__authorise header__authorise_wider-only">
+                        <a href="#" class="header__top-nav-link">LOGIN</a><span
+                            class="header__authorise-span header__top-nav-link">OR</span>
+                        <a href="#" class="header__top-nav-link">REGISTER</a>
+                    </div>
+                    <form action="#" class="header__form">
+                        <input type="search" class="header__input" placeholder="Find it here...">
+                        <button type="submit" class="header__form-submit"><img src="img/search-icon.svg"
+                                alt="search"></button>
+                    </form>
+                </div>
+                <!-- Меню и корзина для мобилок -->
+                <div class="header__drop-down-mobile container">
+                    <div class="header__drop-down-mobile-nav">
+                        <a href="#" class="header__main-nav-link header__main-nav-link_heading">
+                            <i class="fas fa-bars header__drop-down-mobile-nav-icon"></i>NAVIGATION</a>
+                    </div>
+                    <div class="header__drop-down-mobile-cart">
+                        <img src="img/basket-mobile-img.png" alt="basket">
+                        <span class="price header__drop-down-mobile-cart-price">$0.00</span>
+                    </div>
+                </div>
+                <!-- Меню для больших экранов -->
+                <nav class="header__main-nav container">
+                    <a href="#" id="home" class="logo header__main-nav-logo">
+                        <img class="logo__img" src="img/logo-img.svg" alt="logo">
+                        <h2 class="logo__heading">FENGO</h2>
+                    </a>
+                    <ul class="header__main-nav-menu">
+                        <li><a href="" class="header__main-nav-link">Fashion</a></li>
+                        <li><a href="" class="header__main-nav-link">Electronics</a></li>
+                        <li><a href="" class="header__main-nav-link">Gifts</a></li>
+                        <li><a href="" class="header__main-nav-link">Books</a></li>
+                        <li><a href="" class="header__main-nav-link">At Home</a></li>
+                        <li><a href="" class="header__main-nav-link">Music</a></li>
+                        <li><a href="" class="header__main-nav-link">Sale</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <!-- Main -->
+            <main>
+                <!-- Main slider -->
+                <div class="slider-wrapper">
+                    <div class="slider container">
+                        <article class="slider__text">
+                            <h4 class="deal-name slider__deal-name">Check your
+                            </h4>
+                            <h2 class="slider__main-h2 main-h2">autumn
+                                style</h2>
+                            <h4 class="deal-name slider__deal-name">All the trends you need
+                                this season</h4>
+                            <a href="#" class="more-btn slider__more-btn">read it now<i
+                                    class="fas fa-chevron-right more-btn__arrow-right arrow-right"></i></a>
+                        </article>
+                        <div class="slider-btns">
+                            <a href="#" class="slider-btn"><i
+                                    class="fas fa-chevron-right slider-btn__arrow-right arrow-right"></i></a>
+                            <a href="#" class="slider-btn"><i
+                                    class="fas fa-chevron-right slider-btn__arrow-right arrow-right"></i></a>
+                        </div>
+                        <div class="slider-pagination">
+                            <ul class="slider-pagination__menu">
+                                <li><a href="#" class="slider-pagination__link"></a></li>
+                                <li><a href="#" class="slider-pagination__link"></a></li>
+                                <li><a href="#" class="slider-pagination__link"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- Only mobile banner -->
+                <div class="pay-less-wrapper">
+                    <article class="pay-less container">
+                        <div class="pay-less__text">
+                            <h2 class="pay-less__main-h2 main-h2">
+                                you pay less
+                            </h2>
+                            <h4 class="pay-less__deal-name deal-name">everyone else pays attention</h4>
+                            <a href="#" class="pay-less__more-btn more-btn">get your discount<i
+                                    class="fas fa-chevron-right arrow-right"></i></a>
+                        </div>
+                    </article>
+                </div>
+                <!-- Deals -->
+                <div class="deals-wrapper">
+                    <div class="deals container">
+                        <div class="deals__block deals__block1">
+                            <div class="deals__block-text-wrapper">
+                                <article class="deals__block1-text">
+                                    <h4 class="deals__main-h2 main-h2">exclusive</h4>
+                                    <h4 class="deals__deal-name deals__deal-name_subdeal deal-name">discount codes &
+                                        offers
+                                    </h4>
+                                </article>
+                            </div>
+                            <div class="deals__more-btn-wrapper">
+                                <a href="#" class="deals__more-btn more-btn">get your discount<i
+                                        class="fas fa-chevron-right arrow-right"></i></a>
+                            </div>
+                        </div>
+                        <div class="deals__block deals__block2">
+                            <div class="deals__block-text-wrapper deals__block-text-wrapper_block2">
+                                <article class="deals__block2-text">
+                                    <h4 class="deals__deal-name deals__deal-name_block2 deal-name">the</h4>
+                                    <h4 class="deals__deal-name deals__deal-name_dark deal-name">hottest styles</h4>
+                                    <h4 class="deals__deal-name deals__deal-name_dark2 deal-name">are here</h4>
+                                </article>
+                            </div>
+                            <div class="deals__more-btn-wrapper">
+                                <a href="#" class="deals__more-btn more-btn">watch now<i
+                                        class="fas fa-chevron-right arrow-right"></i></a>
+                            </div>
+                        </div>
+                        <div class="deals__block deals__block3">
+                            <div class="deals__block-text-wrapper">
+                                <article class="deals__block3-4-text">
+                                    <h2 class="deals__main-h2 main-h2">jewelry</h2>
+                                    <h4 class="deals__deal-name deal-name">every third item is free!</h4>
+                                </article>
+                            </div>
+                            <div class="deals__more-btn-wrapper">
+                                <a href="#" class="deals__more-btn more-btn">buy now<i
+                                        class="fas fa-chevron-right arrow-right"></i></a>
+                            </div>
+                        </div>
+                        <div class="deals__block deals__block4">
+                            <div class="deals__block-text-wrapper">
+                                <article class="deals__block3-4-text">
+                                    <h2 class="deals__main-h2 deals__main-h2_block4 main-h2">accessories</h2>
+                                    <h4 class="deals__deal-name deals__deal-name_block4 deal-name">Complete your style
+                                    </h4>
+                                </article>
+                            </div>
+                            <div class="deals__more-btn-wrapper">
+                                <a href="#" class="deals__more-btn more-btn">get the look<i
+                                        class="fas fa-chevron-right arrow-right"></i></a>
+                            </div>
+                        </div>
+                        <div class="deals__block deals__block5">
+                            <div class="deals__block-text-wrapper">
+                                <article class="deals__block5-text">
+                                    <h2 class="deals__main-h2 main-h2">
+                                        LOOKBOOK
+                                    </h2>
+                                    <h4 class="deals__deal-name deals__deal-name_block5 deal-name">
+                                        women
+                                    </h4>
+                                    <h2 class="deals__main-h2 deals__main-h2_block5 main-h2">
+                                        autumn 2019
+                                    </h2>
+                                </article>
+                            </div>
+
+                            <div class="deals__more-btn-wrapper">
+                                <a href="#" class="deals__more-btn deals__more-btn_block5 more-btn">get the look<i
+                                        class="fas fa-chevron-right arrow-right"></i></a>
+                            </div>
+
+                            <div class="deals__slider-pagination slider-pagination">
+                                <ul class="slider-pagination__menu">
+                                    <li><a href="#" class="slider-pagination__link"></a></li>
+                                    <li><a href="#" class="slider-pagination__link"></a></li>
+                                    <li><a href="#" class="slider-pagination__link"></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <article class="deals__block deals__block6">
+                            <div class="deals__block-text-wrapper">
+                                <h2 class="deals__main-h2 deals__main-h2_block6 main-h2">
+                                    what's new?
+                                </h2>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <!-- Deals end -->
+                <div class="products container">
+                    <nav class="products__nav">
+                        <ul class="products__nav-menu">
+                            <li><a href="#" class="products__nav-menu-link products__nav-menu-link_active">new
+                                    arrivals</a></li>
+                            <li><a href="#" class="products__nav-menu-link">Featured</a></li>
+                            <li><a href="#" class="products__nav-menu-link">bestsellers</a></li>
+                            <li><a href="#" class="products__nav-menu-link">Special</a></li>
+                        </ul>
+                    </nav>
+                    <!-- Продукты -->
+                    <div class="products__items">
+                        <div href="#" class="product">
+                            <a href="#" class="product__link">
+                                <img class="product__img">
+                                <div class="product__text">
+                                    <div class="product__text-h-wrapper">
+                                        <h4 class="product__text-h">Carded Cotton Shawl</h4>
+                                        <h4 class="product__text-h">Cardigan</h4>
+                                    </div>
+                                    <span class="product__text-price">$187</span>
+                                </div>
+                            </a>
+                            <!-- Hover -->
+                            <div href="#" class="product__hover">
+                                <div class="product__hover-block1">
+                                    <a href="#" class="product__hover-block1-btn">add to bag</a>
+                                    <a href="#" class="product__hover-block1-btn">more info</a>
+                                </div>
+                                <div class="product__hover-block2">
+                                    <a href="#" class="product__hover-block2-btn">+ Add to Wishlist</a>
+                                    <a href="#" class="product__hover-block2-btn">+ Add to Compare</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div href="#" class="product">
+                            <a href="#" class="product__link">
+                                <img class="product__img">
+                                <div class="product__text">
+                                    <div class="product__text-h-wrapper">
+                                        <h4 class="product__text-h">Carded Cotton Shawl</h4>
+                                        <h4 class="product__text-h">Cardigan</h4>
+                                    </div>
+                                    <span class="product__text-price">$187</span>
+                                </div>
+                            </a>
+                            <!-- Hover -->
+                            <div href="#" class="product__hover">
+                                <div class="product__hover-block1">
+                                    <a href="#" class="product__hover-block1-btn">add to bag</a>
+                                    <a href="#" class="product__hover-block1-btn">more info</a>
+                                </div>
+                                <div class="product__hover-block2">
+                                    <a href="#" class="product__hover-block2-btn">+ Add to Wishlist</a>
+                                    <a href="#" class="product__hover-block2-btn">+ Add to Compare</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div href="#" class="product">
+                            <a href="#" class="product__link">
+                                <img class="product__img">
+                                <div class="product__text">
+                                    <div class="product__text-h-wrapper">
+                                        <h4 class="product__text-h">Carded Cotton Shawl</h4>
+                                        <h4 class="product__text-h">Cardigan</h4>
+                                    </div>
+                                    <span class="product__text-price">$187</span>
+                                </div>
+                            </a>
+                            <!-- Hover -->
+                            <div href="#" class="product__hover">
+                                <div class="product__hover-block1">
+                                    <a href="#" class="product__hover-block1-btn">add to bag</a>
+                                    <a href="#" class="product__hover-block1-btn">more info</a>
+                                </div>
+                                <div class="product__hover-block2">
+                                    <a href="#" class="product__hover-block2-btn">+ Add to Wishlist</a>
+                                    <a href="#" class="product__hover-block2-btn">+ Add to Compare</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div href="#" class="product">
+                            <a href="#" class="product__link">
+                                <img class="product__img">
+                                <div class="product__text">
+                                    <div class="product__text-h-wrapper">
+                                        <h4 class="product__text-h">Carded Cotton Shawl</h4>
+                                        <h4 class="product__text-h">Cardigan</h4>
+                                    </div>
+                                    <span class="product__text-price">$187</span>
+                                </div>
+                            </a>
+                            <!-- Hover -->
+                            <div href="#" class="product__hover">
+                                <div class="product__hover-block1">
+                                    <a href="#" class="product__hover-block1-btn">add to bag</a>
+                                    <a href="#" class="product__hover-block1-btn">more info</a>
+                                </div>
+                                <div class="product__hover-block2">
+                                    <a href="#" class="product__hover-block2-btn">+ Add to Wishlist</a>
+                                    <a href="#" class="product__hover-block2-btn">+ Add to Compare</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div href="#" class="product">
+                            <a href="#" class="product__link">
+                                <img class="product__img">
+                                <div class="product__text">
+                                    <div class="product__text-h-wrapper">
+                                        <h4 class="product__text-h">Carded Cotton Shawl</h4>
+                                        <h4 class="product__text-h">Cardigan</h4>
+                                    </div>
+                                    <span class="product__text-price">$187</span>
+                                </div>
+                            </a>
+                            <!-- Hover -->
+                            <div href="#" class="product__hover">
+                                <div class="product__hover-block1">
+                                    <a href="#" class="product__hover-block1-btn">add to bag</a>
+                                    <a href="#" class="product__hover-block1-btn">more info</a>
+                                </div>
+                                <div class="product__hover-block2">
+                                    <a href="#" class="product__hover-block2-btn">+ Add to Wishlist</a>
+                                    <a href="#" class="product__hover-block2-btn">+ Add to Compare</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div href="#" class="product product_sm">
+                            <a href="#" class="product__link">
+                                <img class="product__img">
+                                <div class="product__text">
+                                    <div class="product__text-h-wrapper">
+                                        <h4 class="product__text-h">Carded Cotton Shawl</h4>
+                                        <h4 class="product__text-h">Cardigan</h4>
+                                    </div>
+                                    <span class="product__text-price">$187</span>
+                                </div>
+                            </a>
+                            <!-- Hover -->
+                            <div href="#" class="product__hover">
+                                <div class="product__hover-block1">
+                                    <a href="#" class="product__hover-block1-btn">add to bag</a>
+                                    <a href="#" class="product__hover-block1-btn">more info</a>
+                                </div>
+                                <div class="product__hover-block2">
+                                    <a href="#" class="product__hover-block2-btn">+ Add to Wishlist</a>
+                                    <a href="#" class="product__hover-block2-btn">+ Add to Compare</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div href="#" class="product product_lg">
+                            <a href="#" class="product__link">
+                                <img class="product__img">
+                                <div class="product__text">
+                                    <div class="product__text-h-wrapper">
+                                        <h4 class="product__text-h">Carded Cotton Shawl</h4>
+                                        <h4 class="product__text-h">Cardigan</h4>
+                                    </div>
+                                    <span class="product__text-price">$187</span>
+                                </div>
+                            </a>
+                            <!-- Hover -->
+                            <div href="#" class="product__hover">
+                                <div class="product__hover-block1">
+                                    <a href="#" class="product__hover-block1-btn">add to bag</a>
+                                    <a href="#" class="product__hover-block1-btn">more info</a>
+                                </div>
+                                <div class="product__hover-block2">
+                                    <a href="#" class="product__hover-block2-btn">+ Add to Wishlist</a>
+                                    <a href="#" class="product__hover-block2-btn">+ Add to Compare</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div href="#" class="product product_lg">
+                            <a href="#" class="product__link">
+                                <img class="product__img">
+                                <div class="product__text">
+                                    <div class="product__text-h-wrapper">
+                                        <h4 class="product__text-h">Carded Cotton Shawl</h4>
+                                        <h4 class="product__text-h">Cardigan</h4>
+                                    </div>
+                                    <span class="product__text-price">$187</span>
+                                </div>
+                            </a>
+                            <!-- Hover -->
+                            <div href="#" class="product__hover">
+                                <div class="product__hover-block1">
+                                    <a href="#" class="product__hover-block1-btn">add to bag</a>
+                                    <a href="#" class="product__hover-block1-btn">more info</a>
+                                </div>
+                                <div class="product__hover-block2">
+                                    <a href="#" class="product__hover-block2-btn">+ Add to Wishlist</a>
+                                    <a href="#" class="product__hover-block2-btn">+ Add to Compare</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- Show more -->
+                    <div class="products__show-more-wrapper">
+                        <a href="#" class="products__show-more">show more</a>
+                    </div>
+                </div>
+            </main>
+        </div>
+        <div class="footer-wrapper">
+            <footer class="footer container">
+                <div class="footer__cols">
+                    <!-- Первая колонка -->
+                    <div class="footer__col-block footer__col1">
+                        <div class="footer__col1-block footer__col1-block1">
+                            <div class="footer__block-header">
+                                <h4 class="footer__heading"> ABOUT FENGO SHOP</h4>
+                            </div>
+                            <img class="footer__img footer__img_block1">
+                            <p class="footer__text">Morbi pretium odio in
+                                dapibus varius. Integer
+                                sagittis, tellus
+                                venenatis, ipsum ligula
+                                auctor lectus, suscipit
+                                velit quam quis turpis.
+                                Fusce scelerisque aliquet commodo. Sed lobotis laoreet risus
+                                vitae tincidunt. Ut consectetur nec purus in
+                                egestas. Pellentesque vehicula urna purus.</p>
+                            <a href="#" class="more-btn footer__more-btn">read more<i
+                                    class="fas fa-chevron-right more-btn__arrow-right arrow-right"></i></a>
+                        </div>
+                        <div class="footer__col1-block footer__col1-block2">
+                            <div class="footer__col1-block2-header">
+                                <div class="footer__block-header">
+                                    <h4 class="footer__heading"> From the Blog</h4>
+                                </div>
+                                <!-- Стрелочки -->
+                                <div class="footer__slider-btns slider-btns">
+                                    <a href="#" class="footer__slider-btn slider-btn"><i
+                                            class="fas fa-chevron-right slider-btn__arrow-right arrow-right footer__arrow-right"></i></a>
+                                    <a href="#" class="footer__slider-btn slider-btn"><i
+                                            class="fas fa-chevron-right slider-btn__arrow-right arrow-right footer__arrow-right"></i></a>
+                                </div>
+                            </div>
+                            <img class="footer__img footer__img_block2">
+                            <h4 class="footer__heading footer__heading_block2">Pellentesque vehicula urna
+                                purus</h4>
+                        </div>
+                        <div class="footer__col1-block footer__col1-block3">
+                            <div class="footer__block-header">
+                                <h4 class="footer__heading">QUICK CONTACT</h4>
+                            </div>
+                            <a href="#">
+                                <img src="img/map.jpg" alt="map" class="footer__img footer__img_block3">
+                            </a>
+                            <form class="footer__form" action="#">
+                                <input type="name" class="footer__input" placeholder="Enter your name">
+                                <input type="email" class="footer__input" placeholder="Enter your E-mail">
+                                <textarea cols="30" rows="10" class="footer__input"
+                                    placeholder="Enter your message"></textarea>
+                                <button type="submit" class="footer__more-btn more-btn">send message<i
+                                        class="fas fa-chevron-right more-btn__arrow-right arrow-right"></i></button>
+                            </form>
+                        </div>
+                        <div class="footer__col1-block footer__col1-block4">
+                            <form class="footer__col1-block4-form" action="#">
+                                <input type="email" class="footer__input" placeholder="enter your email">
+                                <button class="footer__col1-block4-btn" type="submit">
+                                    <i
+                                        class="fas fa-chevron-right footer__arrow-right footer__arrow-right_block4 arrow-right"></i>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                    <!-- Вторая колонка -->
+                    <div class="footer__col footer__col2">
+                        <div class="footer__col2-block footer__col2-block1">
+                            <div class="footer__block-header">
+                                <h4 class="footer__heading">Most favorite</h4>
+                                <div class="footer__slider-btns slider-btns">
+                                    <a href="#" class="footer__slider-btn slider-btn"><i
+                                            class="fas fa-chevron-right slider-btn__arrow-right arrow-right footer__arrow-right"></i></a>
+                                    <a href="#" class="footer__slider-btn slider-btn"><i
+                                            class="fas fa-chevron-right slider-btn__arrow-right arrow-right footer__arrow-right"></i></a>
+                                </div>
+                            </div>
+                            <!-- Продукты -->
+                            <div class="footer__col2-products">
+                                <!-- Продукт -->
+                                <div href="#" class="footer__product product">
+                                    <a href="#" class="product__link">
+                                        <img class="product__img product__img_footer">
+                                        <div class="product__text">
+                                            <div class="product__text-h-wrapper">
+                                                <h4 class="product__text-h product__text-h_footer">Carded Cotton Shawl
+                                                </h4>
+                                                <h4 class="product__text-h product__text-h_footer">Cardigan</h4>
+                                            </div>
+                                            <span class="product__text-price product__text-price_footer">$187</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <!-- Продукт -->
+                                <div href="#" class="footer__product product">
+                                    <a href="#" class="product__link">
+                                        <img class="product__img product__img_footer">
+                                        <div class="product__text">
+                                            <div class="product__text-h-wrapper">
+                                                <h4 class="product__text-h product__text-h_footer">Carded Cotton Shawl
+                                                </h4>
+                                                <h4 class="product__text-h product__text-h_footer">Cardigan</h4>
+                                            </div>
+                                            <span class="product__text-price product__text-price_footer">$187</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footer__col2-block footer__col2-block2">
+                            <div class="footer__block-header">
+                                <h4 class="footer__heading">twitter</h4>
+                                <a href="#" class="footer__btn">follow</a>
+                            </div>
+                            <!-- Twitter post -->
+                            <article class="footer__twitter-post">
+                                <div class="footer__twitter-post-name">
+                                    <img class="footer__twitter-post-img" src="img/twitter-img.jpg" alt="twitter">
+                                    <h4 class="footer__heading">promokit</h4>
+                                    <span class="footer__text">@marek_mnishek</span>
+                                </div>
+                                <p class="footer__text">Vivamus id quam quis velit semper
+                                    adipiscing nec in libero. Praesent
+                                    quis lectus at justo ornare laoreet.
+                                    Proin luctus viverra <a href="#"
+                                        class="footer__twitter-post-link">bit.ly/1byZ6QM</a>
+                                </p>
+                                <div class="footer__text footer__twitter-post-date">
+                                    9 October 2019
+                                </div>
+                                <div class="footer__twitter-post-actions">
+                                    <a href="#" class="footer__text footer__twitter-post-actions-items"><i
+                                            class="fas fa-reply footer__twitter-post-actions-icons"></i>Reply</a>
+                                    <a href="#" class="footer__text footer__twitter-post-actions-items"><i
+                                            class="fas fa-retweet footer__twitter-post-actions-icons"></i>Retweet</a>
+                                </div>
+                            </article>
+                            <article class="footer__twitter-post">
+                                <div class="footer__twitter-post-name">
+                                    <img class="footer__twitter-post-img" src="img/twitter-img.jpg" alt="twitter">
+                                    <h4 class="footer__heading">promokit</h4>
+                                    <span class="footer__text">@marek_mnishek</span>
+                                </div>
+                                <p class="footer__text">Vivamus id quam quis velit semper
+                                    adipiscing nec in libero. Praesent
+                                    quis lectus at justo ornare laoreet.
+                                    Proin luctus viverra <a href="#"
+                                        class="footer__twitter-post-link">bit.ly/1byZ6QM</a>
+                                </p>
+                                <div class="footer__text footer__twitter-post-date">
+                                    9 October 2019
+                                </div>
+                                <div class="footer__twitter-post-actions">
+                                    <a href="#" class="footer__text footer__twitter-post-actions-items"><i
+                                            class="fas fa-reply footer__twitter-post-actions-icons"></i>Reply</a>
+                                    <a href="#" class="footer__text footer__twitter-post-actions-items"><i
+                                            class="fas fa-retweet footer__twitter-post-actions-icons"></i>Retweet</a>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="footer__col2-block footer__col2-block3">
+                            <div class="footer__block-header">
+                                <h4 class="footer__heading">facebook</h4>
+                                <a href="#" class="footer__btn">like</a>
+                            </div>
+                            <p class="footer__text">1452 people like PromoKit</p>
+                            <div class="footer__col2-block3-facebook">
+                                <a href="#" class="footer__col2-block3-facebook-person"><img
+                                        class="footer__img footer__img_facebook-person"></a>
+                                <a href="#" class="footer__col2-block3-facebook-person"><img
+                                        class="footer__img footer__img_facebook-person"></a>
+                                <a href="#" class="footer__col2-block3-facebook-person"><img
+                                        class="footer__img footer__img_facebook-person"></a>
+                                <a href="#" class="footer__col2-block3-facebook-person"><img
+                                        class="footer__img footer__img_facebook-person"></a>
+                                <a href="#" class="footer__col2-block3-facebook-person"><img
+                                        class="footer__img footer__img_facebook-person"></a>
+                                <a href="#" class="footer__col2-block3-facebook-person"><img
+                                        class="footer__img footer__img_facebook-person"></a>
+                                <a href="#"
+                                    class="footer__col2-block3-facebook-person footer__col2-block3-facebook-person_lg"><img
+                                        class="footer__img footer__img_facebook-person"></a>
+                                <a href="#"
+                                    class="footer__col2-block3-facebook-person footer__col2-block3-facebook-person_lg"><img
+                                        class="footer__img footer__img_facebook-person"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Третья колонка -->
+                    <div class="footer__col footer__col3">
+                        <div class="footer__col3-block footer__col3-block1">
+                            <h4 class="footer__heading footer__heading_nav">INFORMATION</h4>
+                            <nav>
+                                <ul class="footer__nav">
+                                    <li><a href="#" class="footer__text footer__nav-link">New products</a></li>
+                                    <li><a href="#" class="footer__text footer__nav-link">Top sellers</a></li>
+                                    <li><a href="#" class="footer__text footer__nav-link">Specials products</a></li>
+                                    <li><a href="#" class="footer__text footer__nav-link">Manufacturers</a></li>
+                                    <li><a href="#" class="footer__text footer__nav-link">Suppliers</a></li>
+                                    <li><a href="#" class="footer__text footer__nav-link">Our stores</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="footer__col3-block footer__col3-block2">
+                            <h4 class="footer__heading footer__heading_nav">MY ACCOUNT</h4>
+                            <nav>
+                                <ul class="footer__nav">
+                                    <li><a href="#" class="footer__text footer__nav-link">My account</a></li>
+                                    <li><a href="#" class="footer__text footer__nav-link">Personal information</a></li>
+                                    <li><a href="#" class="footer__text footer__nav-link">Addresses</a></li>
+                                    <li><a href="#" class="footer__text footer__nav-link">Discounts</a></li>
+                                    <li><a href="#" class="footer__text footer__nav-link">Orders history</a></li>
+                                    <li><a href="#" class="footer__text footer__nav-link">Your Vouchers</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="footer__col3-block footer__col3-block3">
+                            <h4 class="footer__heading footer__heading_nav">CUSTOMER SERVICE</h4>
+                            <nav>
+                                <ul class="footer__nav">
+                                    <li><a href="#" class="footer__text footer__nav-link">Help & contact</a></li>
+                                    <li><a href="#" class="footer__text footer__nav-link">Shipping & taxes</a></li>
+                                    <li><a href="#" class="footer__text footer__nav-link">Return policy</a></li>
+                                    <li><a href="#" class="footer__text footer__nav-link">Careers</a></li>
+                                    <li><a href="#" class="footer__text footer__nav-link">Affiliates</a></li>
+                                    <li><a href="#" class="footer__text footer__nav-link">Legal Notice</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                    <!-- Под колонками -->
+                </div>
+                <div class="footer__external">
+                    <div class="footer__external-payment">
+                        <a href="#" class="footer__external-payment-link"><img class="footer__external-payment-img"
+                                src="img/credit-card1.png" alt="photo"></a>
+                        <a href="#" class="footer__external-payment-link"><img class="footer__external-payment-img"
+                                src="img/credit-card2.png" alt="photo"></a>
+                        <a href="#" class="footer__external-payment-link"><img class="footer__external-payment-img"
+                                src="img/credit-card3.png" alt="photo"></a>
+                        <a href="#" class="footer__external-payment-link"><img class="footer__external-payment-img"
+                                src="img/credit-card4.png" alt="photo"></a>
+                        <a href="#" class="footer__external-payment-link"><img class="footer__external-payment-img"
+                                src="img/credit-card5.png" alt="photo"></a>
+                        <a href="#" class="footer__external-payment-link"><img class="footer__external-payment-img"
+                                src="img/credit-card6.png" alt="photo"></a>
+                    </div>
+                    <div class="footer__external-social">
+                        <a href="#" class="footer__external-social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="footer__external-social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="footer__external-social-link"><i class="fas fa-rss"></i></a>
+                        <a href="#" class="footer__external-social-link"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="footer__external-social-link"><i class="fab fa-skype"></i></a>
+                        <a href="#" class="footer__external-social-link"><i class="fas fa-paper-plane"></i></a>
+                        <a href="#" class="footer__external-social-link"><i class="fab fa-google"></i></a>
+                        <a href="#" class="footer__external-social-link"><i class="fab fa-pinterest-p"></i></a>
+                    </div>
+                </div>
+                <p class="footer__text footer__text_external">
+                    &copy; 2019 Powered by WooCommerce&trade;.
+                    All Rights Reserved.
+                </p>
+                <div class="footer__slider-btn-wrapper">
+                    <a href="#fengo" class="footer__slider-btn footer__slider-btn_external footer__slider-btn_lg-no slider-btn"><i
+                            class="fas fa-chevron-right slider-btn__arrow-right arrow-right footer__arrow-right footer__arrow-right_external"></i></a>
+                    <a href="#home" class="footer__slider-btn footer__slider-btn_external footer__slider-btn_lg slider-btn"><i
+                            class="fas fa-chevron-right slider-btn__arrow-right arrow-right footer__arrow-right footer__arrow-right_external"></i></a>
+                </div>
+            </footer>
+        </div>
+    </div>
+</body>
+
+</html>

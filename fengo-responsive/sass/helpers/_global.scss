@@ -1,0 +1,51 @@
+//Подключение шрифта
+@import url('https://fonts.googleapis.com/css?family=Merriweather+Sans:300,400,400i,700&display=swap');
+// Reset css
+@import url('https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css');
+
+//Fontawesome
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css');
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: 'Merriweather Sans', sans-serif;
+}
+
+// Прижатие подвала
+html,
+body {
+  height: 100%;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.content {
+  flex: 1 0 auto;
+}
+
+.footer {
+  flex: 0 0 auto;
+}
+
+.container {
+  margin: 0 auto;
+
+  @include breakpoint(xs) {
+    max-width: 280px;
+  }
+
+  @include breakpoint(sm) {
+    max-width: 724px;
+  }
+
+  @include breakpoint(lg) {
+    max-width: 1170px;
+  }
+}
