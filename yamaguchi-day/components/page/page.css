@@ -1,0 +1,33 @@
+.page {
+    display: grid;
+}
+
+@media screen and (max-width: 1920px) {
+    .page {
+        grid-template-areas:
+                'heading'
+                'paragraph1'
+                'table'
+                'paragraph2';
+    }
+
+    .page__heading {
+        margin-bottom: 37px;
+        margin-top: 14px;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .page {
+        grid-template-columns: 1fr 500px;
+        grid-template-areas:
+            'table heading'
+            'table paragraph1'
+            'table paragraph2';
+    }
+
+    .page__heading {
+        margin-bottom: 60px;
+        margin-top: 25px;
+    }
+}

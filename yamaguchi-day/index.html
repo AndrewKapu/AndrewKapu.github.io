@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <title>Yamaguchi</title>
+    <link rel="stylesheet" href="components/heading/heading.css">
+</head>
+<body>
+<div class="container">
+    <div class="page">
+        <h1 class="heading page__heading">Эргономика —
+            ключ к успеху современного человека </h1>
+        <p class="paragraph paragraph1">Cтильная столешница , выполненной из экологически безопасного материала (ДСП), и усиленной
+            стальной рамы не составит труда разместить на поверхности инновационного стола большое количество
+            крупногабаритной техники: стол выдерживает нагрузку до 80 кг.
+
+        </p>
+        <div  class="table page__table">
+            <div id="topPart" class="table__part">
+                <img srcset="assets/img/table-top.png 1920w" class="table__photo" src="assets/img/table1.png" alt="photo">
+            </div>
+            <div id="bottomPart" class="table__part">
+                <img srcset="assets/img/table-bottom.png 1920w" class="table__photo" src="assets/img/table2.png" alt="photo">
+            </div>
+            <div class="table__buttons">
+                <div id="up" class="table__button">вверх</div>
+                <div id="down" class="table__button">вниз</div>
+            </div>
+        </div>
+        <p class="paragraph paragraph2">Также столешница, обладающая меламиновым покрытием, хорошо переносит механические воздействия (царапины или удары), при контакте с водой не разрушается, устойчиво переносит бытовые химические вещества и не выгорает под воздействием ультрафиолета.</p>
+    </div>
+</div>
+<script>
+    let upBtn = document.getElementById('up');
+    let downBtn = document.getElementById('down');
+
+    upBtn.addEventListener('click', () => {
+        document.getElementById('topPart').classList.add('table__part_top');
+    });
+
+    downBtn.addEventListener('click', () => {
+        document.getElementById('topPart').classList.remove('table__part_top');
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,7 @@
+@import 'libs/reset.css';
+@import '../fonts/fonts.css';
+@import '../../components/container/container.css';
+@import '../../components/heading/heading.css';
+@import '../../components/page/page.css';
+@import '../../components/paragraph/paragraph.css';
+@import '../../components/table/table.css';

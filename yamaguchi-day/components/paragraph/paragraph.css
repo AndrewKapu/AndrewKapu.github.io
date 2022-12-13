@@ -1,0 +1,34 @@
+.paragraph {
+    font-family: 'UbuntuLight', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 170%;
+}
+
+@media screen and (max-width: 1920px) {
+    .paragraph {
+        font-size: 16px;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .paragraph {
+        font-size: 22px;
+    }
+}
+
+
+.paragraph1 {
+    grid-area: paragraph1;
+}
+
+@media screen and (min-width: 1920px) {
+    .paragraph1 {
+        margin-bottom: 60px;
+    }
+}
+
+.paragraph2 {
+    grid-area: paragraph2;
+}

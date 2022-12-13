@@ -1,0 +1,85 @@
+.table {
+    position: relative;
+    height: 217px
+}
+
+.page__table {
+    margin: 23px 0 23px 0;
+}
+
+.table__part {
+    position: absolute;
+    transition: 0.8s;
+}
+
+.table__part_top {
+    transform: translateY(-22px);
+}
+
+.table__part_bottom {
+
+}
+
+.table__photo {
+    width: 100%;
+}
+
+.table__buttons {
+    position: absolute;
+    top: 56%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    gap: 8px;
+}
+
+.table__button {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    width: 50px;
+    height: 50px;
+    background: #A6FFFF;
+}
+
+.table {
+    grid-area: table;
+}
+
+@media screen and (max-width: 1920px) {
+    .table__photo {
+        width: 320px;
+    }
+}
+
+
+@media screen and (min-width: 1920px) {
+    .table__buttons {
+        transform: translate(-25%, 132%);
+    }
+
+    .table__photo {
+        width: 1154px
+    }
+
+    .table__button {
+        border-radius: 50%;
+        width: 200px;
+        height: 200px;
+        font-family: 'UbuntuLight';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 40.1944px;
+        line-height: 170%;
+    }
+
+    .page__table {
+        transform: translateX(-68px);
+    }
+
+    .table__part_top {
+        transform: translateY(-85px);
+    }
+}
