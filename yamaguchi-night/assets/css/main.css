@@ -1,0 +1,7 @@
+@import "libs/reset.css";
+@import "../fonts/fonts.css";
+@import "../../components/text/text.css";
+@import "../../components/container/container.css";
+@import "../../components/page/page.css";
+@import "../../components/body/body.css";
+@import "../../components/animation/animation.css";

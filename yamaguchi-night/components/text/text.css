@@ -1,0 +1,27 @@
+.text {
+
+}
+
+.text__h {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 34px;
+    line-height: 100%;
+    color: #FFFFFF;
+    margin: 17px 0 30px 0;
+
+}
+
+.text__p {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 170%;
+    color: #FFFFFF;
+}
+
+.text__p:nth-child(2) {
+    margin-bottom: 30px;
+}

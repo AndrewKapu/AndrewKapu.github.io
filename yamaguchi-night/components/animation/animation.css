@@ -1,0 +1,63 @@
+.animation {
+    overflow: hidden;
+}
+
+.animation__girl {
+    z-index: 1;
+    position: relative;
+    animation: teleport 4s linear forwards, moving-girl ease 5s infinite;
+}
+
+@keyframes teleport {
+    from {
+        opacity: 0;
+        top: 757px;
+    }
+
+     to {
+        opacity: 1;
+         top: 0;
+     }
+}
+
+@keyframes moving-girl {
+    0% {
+        transform: translate(0%, 0%) rotate(360deg);
+    }
+
+    25% {
+        transform: translate(5%, 15%) rotate(360deg);
+    }
+
+    50% {
+        transform: translate(10%, 5%) rotate(360deg);
+    }
+
+    75% {
+        transform: translate(0%, 15%) rotate(360deg);
+    }
+
+    100% {
+        transform: translate(0%, 0%) rotate(360deg);
+    }
+}
+
+.animation__img {
+    width: 100%;
+}
+
+
+.animation__hole {
+    position: relative;
+    right: -50px;
+    width: 194px;
+    height: 61px;
+    border-radius: 50%;
+    background: #000000;
+    transform: scale(0);
+}
+
+.animation__hole_open {
+    transition: transform 1s;
+    transform: scale(1);
+}
