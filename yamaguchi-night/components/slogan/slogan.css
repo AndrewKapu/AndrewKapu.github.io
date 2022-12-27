@@ -1,0 +1,53 @@
+.slogan {
+    grid-area: slogan;
+}
+
+.slogan__page {
+    margin-top: 60px;
+}
+
+.slogan__line {
+    font-family: 'MontserratExtraBold';
+    color: #FFFFFF;
+}
+
+.slogan__line_1 {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 39px;
+    line-height: 90%;
+}
+
+.slogan__line_2 {
+    margin: 9px 0 14px 0;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 61px;
+    line-height: 90%;
+}
+
+.slogan__line_3 {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 50px;
+    line-height: 90%;
+}
+
+@media screen and (min-width: 1920px) {
+    .slogan__line {
+
+    }
+
+    .slogan__line_1 {
+        font-size: 45px;
+    }
+
+    .slogan__line_2 {
+        margin-top: 18px;
+        padding-left: 60px;
+    }
+
+    .slogan__line_3 {
+        font-size: 61px;
+    }
+}

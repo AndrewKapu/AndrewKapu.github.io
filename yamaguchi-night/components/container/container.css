@@ -1,4 +1,13 @@
-.container {
-    width: 290px;
-    margin: 0 auto;
+@media screen and (max-width: 1920px){
+    .container {
+        width: 290px;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (min-width: 1920px){
+    .container {
+        width: 1920px;
+        margin: 0 auto;
+    }
 }

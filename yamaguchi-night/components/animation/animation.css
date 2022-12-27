@@ -1,11 +1,14 @@
 .animation {
     overflow: hidden;
+    grid-area: animation;
 }
 
 .animation__girl {
+    visibility: hidden;
     z-index: 1;
     position: relative;
     animation: teleport 4s linear forwards, moving-girl ease 5s infinite;
+    animation-delay: 2s;
 }
 
 @keyframes teleport {
@@ -60,4 +63,11 @@
 .animation__hole_open {
     transition: transform 1s;
     transform: scale(1);
+}
+
+@media screen and (min-width: 1920px) {
+    .animation__img {
+        width: inherit;
+        transform: translate(-77px, -60px);
+    }
 }

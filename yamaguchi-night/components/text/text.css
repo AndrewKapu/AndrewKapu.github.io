@@ -1,5 +1,5 @@
 .text {
-
+    grid-area: text;
 }
 
 .text__h {
@@ -24,4 +24,24 @@
 
 .text__p:nth-child(2) {
     margin-bottom: 30px;
+}
+
+@media screen and (min-width: 1920px) {
+    .text {
+        width: 586px;
+    }
+
+    .text__h {
+        font-size: 56px;
+        line-height: 90%;
+        margin: 72px 0 90px 0;
+    }
+
+    .text__p {
+        font-size: 22px;
+    }
+
+    .text__p:nth-child(2) {
+        margin-bottom: 40px;
+    }
 }
