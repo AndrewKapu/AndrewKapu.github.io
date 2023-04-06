@@ -1,0 +1,61 @@
+.why-item {
+    border-radius: 7px;
+    width: 300px;
+    height: 348px;
+}
+
+
+@media (min-width: 1441px) {
+    .why-item:hover {
+        background-color: #54387F;
+    }
+
+    .why-item:hover .why-item__icon path {
+        fill: white;
+    }
+
+    .why-item:hover .why-item__name, .why-item__description{
+        color: white;
+    }
+
+    .why-item:hover .why-item__description{
+        color: white;
+    }
+}
+
+.why-item__content-wrapper {
+    padding: 22px 19px 42px 20px;
+    border: 1.5px solid #EBEBEB;
+    border-radius: 7px;
+    box-sizing: border-box;
+    height: 348px
+}
+
+.why-item__icon {}
+
+.why-item__name {
+    font-family: 'OpenSans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 32px;
+    color: #2A2A2A;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+.why-item__description {
+    font-family: 'OpenSans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    color: #6A6A6A;
+}
+
+@media (min-width: 1441px) {
+    .why-item__name {
+        font-size: 24px;
+    }
+    
+}

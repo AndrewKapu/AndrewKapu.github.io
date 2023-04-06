@@ -1,0 +1,16 @@
+.section-description {
+    font-family: 'OpenSans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    color: #54387F;
+    text-align: center;
+}
+
+@media (min-width: 1441px) {
+    .section-description {
+        font-size: 32px;
+        line-height: 44px;
+    }
+}

@@ -1,0 +1,16 @@
+.section-heading {
+    font-family: 'OpenSans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 33px;
+    color: #EF5537;
+    text-align: center;
+}
+
+@media (min-width: 1441px) {
+    .section-heading {
+        font-size: 46px;
+        line-height: 63px;
+    }
+}

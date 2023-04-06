@@ -1,0 +1,17 @@
+.slider-btns {
+    display: flex;
+    justify-content: center;
+    column-gap: 10px;
+}
+
+.slider-btns__item {
+    cursor: pointer;
+    width: 10px;
+    height: 10px;
+    background: #CACACA;
+    border-radius: 5px;
+}
+
+.slider-btns__item_active {
+    background: #EF5537;
+}

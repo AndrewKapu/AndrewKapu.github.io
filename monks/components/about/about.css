@@ -1,0 +1,129 @@
+.about {}
+
+.about__section-heading {
+    margin-bottom: 18px;
+}
+
+.about__facts {
+    height: 402px;
+}
+
+@media (min-width: 1441px) {
+    .about__facts {
+        display: none !important;
+    }
+}
+
+.about__facts-item {
+    text-align: center;
+    margin-top: 73px;
+}
+
+.about__facts-number {
+    font-family: 'OpenSans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 80px;
+    line-height: 109px;
+    letter-spacing: 0.5px;
+    color: #54387F;
+    position: relative;
+}
+
+.about__facts-number::after {
+    content: '+';
+    font-family: 'OpenSans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 68px;
+    letter-spacing: 0.5px;
+    position: absolute;
+
+}
+
+.about__facts-name {
+    font-family: 'OpenSans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #2A2A2A;
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+
+.about__facts-description {
+    font-family: 'OpenSans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 25px;
+    color: #6A6A6A;
+
+}
+
+
+/* Desktop only */
+.about__facts-gallery {
+    display: none;
+    column-gap: 92px;
+    margin-top: 82px;
+}
+
+@media (min-width: 1441px) {
+    .about__facts-gallery {
+        display: flex;
+    }
+}
+
+.about__facts-gallery-item {
+    text-align: center;
+}
+
+.about__facts-gallery-item-number {
+    position: relative;
+    font-family: 'OpenSans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 80px;
+    line-height: 109px;
+    letter-spacing: 0.5px;
+    color: #54387F;
+}
+
+.about__facts-gallery-item-number::after {
+    content: '+';
+    position: absolute;
+    top: -16px;
+    font-family: 'OpenSans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 109px;
+    letter-spacing: 0.5px;
+    color: #54387F;
+}
+
+.about__facts-gallery-item:last-child .about__facts-gallery-item-number::after {
+    content: '%';
+}
+
+.about__facts-gallery-item-name {
+    font-family: 'OpenSans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #2A2A2A;
+    margin: 25px 0 20px 0;
+}
+
+.about__facts-gallery-item-info {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 25px;
+    color: #6A6A6A;
+}

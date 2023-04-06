@@ -1,0 +1,180 @@
+.portfolio {}
+
+.portfolio__nav {
+    margin-top: 56px;
+    margin-bottom: 48px;
+}
+
+.portfolio__nav-menu {
+    display: flex;
+    justify-content: center;
+    column-gap: 48px;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 1441px) {
+    .portfolio__nav-menu_desktop {
+        display: none;
+    }
+}
+
+
+.portfolio__nav-link {
+    text-decoration: none;
+    font-family: 'OpenSans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    color: #2A2A2A;
+}
+
+.portfolio__nav-link:hover {
+    color: #54387F;
+    border-bottom: 1px solid #54387F;
+}
+
+@media (min-width: 1441px) {
+    .portfolio__nav-link {
+        font-family: 'OpenSans';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 27px;
+        color: #6A6A6A;
+    }
+}
+
+.portfolio__nav-link_active {
+    color: #54387F;
+    border-bottom: 1px solid #54387F;
+}
+
+.portfolio__pics-mobile {
+    margin-top: 42px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    column-gap: 20px;
+    row-gap: 15px;
+}
+
+@media (min-width: 1441px) {
+    .portfolio__pics-mobile {
+        display: none;
+    }
+}
+
+
+.portfolio__pics-mobile-item {
+    max-width: 100%;
+}
+
+.portfolio__pics-desktop {
+    display: none;
+}
+
+@media (min-width: 1441px) {
+    .portfolio__pics-desktop {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 6px;
+    }
+
+}
+
+/* a element */
+.portfolio__pics-desktop-link {
+    display: block;
+    position: relative;
+    background-size: cover;
+    width: 629px;
+    height: 356px;
+}
+
+.portfolio__pics-desktop-link:hover h3+h4 {
+    text-decoration: underline;
+}
+
+.portfolio__pics-desktop-link:nth-child(1) {
+    background: linear-gradient(180deg, rgba(35, 35, 35, 0) 0%, rgba(35, 35, 35, 0.65) 100%), url(../../assets/img/portfolio/bed-big.jpg);
+}
+
+.portfolio__pics-desktop-link:nth-child(2) {
+    background: linear-gradient(180deg, rgba(35, 35, 35, 0) 0%, rgba(35, 35, 35, 0.65) 100%), url(../../assets/img/portfolio/helmet-big.jpg);
+}
+
+.portfolio__pics-desktop-link:nth-child(3) {
+    background: linear-gradient(180deg, rgba(35, 35, 35, 0) 0%, rgba(35, 35, 35, 0.65) 100%), url(../../assets/img/portfolio/tv-big.jpg);
+}
+
+.portfolio__pics-desktop-link:nth-child(4) {
+    background: linear-gradient(180deg, rgba(35, 35, 35, 0) 0%, rgba(35, 35, 35, 0.65) 100%), url(../../assets/img/portfolio/lucy-big.jpg);
+}
+
+.portfolio__pics-desktop-link:nth-child(5) {
+    background: linear-gradient(180deg, rgba(35, 35, 35, 0) 0%, rgba(35, 35, 35, 0.65) 100%), url(../../assets/img/portfolio/target-big.jpg);
+}
+
+.portfolio__pics-desktop-link:nth-child(6) {
+    background: linear-gradient(180deg, rgba(35, 35, 35, 0) 0%, rgba(35, 35, 35, 0.65) 100%), url(../../assets/img/portfolio/app-big.jpg);
+}
+
+.portfolio__pics-desktop-link:nth-child(7) {
+    background: linear-gradient(180deg, rgba(35, 35, 35, 0) 0%, rgba(35, 35, 35, 0.65) 100%), url(../../assets/img/portfolio/city-big.jpg);
+}
+
+.portfolio__pics-desktop-link:nth-child(8) {
+    background: linear-gradient(180deg, rgba(35, 35, 35, 0) 0%, rgba(35, 35, 35, 0.65) 100%), url(../../assets/img/portfolio/queen-big.jpg);
+}
+
+.portfolio__pics-desktop-description {
+    position: absolute;
+    bottom: 40px;
+    left: 30px;
+}
+
+.portfolio__pics-desktop-description h3 {
+    font-family: 'OpenSans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 19px;
+    color: #FFFFFF;
+    margin-bottom: 17px;
+}
+
+.portfolio__pics-desktop-description h4 {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #FFFFFF;
+
+}
+
+.portfolio__more-btn-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.portfolio__more-btn {
+    background: #FFFFFF;
+    border: 1px solid #EF5537;
+    border-radius: 200px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 23px;
+    color: #EF5537;
+    padding: 10px 42px;
+    cursor: pointer;
+    margin-top: 40px;
+}
+
+.portfolio__more-btn:hover {
+    background-color: #EF5537;
+    color: #fff;
+}

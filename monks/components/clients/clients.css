@@ -1,0 +1,42 @@
+.clients {
+
+}
+
+
+.clients__mobile-slider {
+
+}
+
+
+@media (min-width: 1441px) {
+    .clients__mobile-slider {
+        display: none;
+    }
+}
+
+.clients__mobile-slider-items {
+    margin-top: 72px;
+    margin-bottom: 38px;
+    display: flex;
+    justify-content: center;
+    column-gap: 35px;
+}
+
+
+.clients__mobile-slider-item {
+
+}
+
+.clients__desktop-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 80px;
+    row-gap: 40px;
+}
+
+@media (max-width: 1441px) {
+    .clients__desktop-wrapper {
+        display: none;
+    }
+}

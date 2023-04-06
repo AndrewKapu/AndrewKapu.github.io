@@ -1,0 +1,25 @@
+.why__mobile-slider {
+    margin-top: 55px;
+    height: 402px;
+}
+
+.why__mobile-slider {}
+
+@media (min-width: 1441px) {
+    .why__mobile-slider {
+        display: none !important;
+    }
+}
+
+.why__desktop {
+    margin-top: 102px;
+    display: none;
+}
+
+@media (min-width: 1441px) {
+    .why__desktop {
+        display: flex;
+        justify-content: center;
+        column-gap: 18px;
+    }
+}

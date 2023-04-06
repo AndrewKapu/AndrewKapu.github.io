@@ -1,0 +1,235 @@
+.hero {
+    display: grid;
+}
+
+@media screen and (max-width: 1441px) {
+    .hero {
+        grid-template-areas:
+            'text'
+            'banner'
+            'form';
+    }
+}
+
+@media screen and (min-width: 1441px) {
+    .hero {
+        grid-template-areas:
+            'text text'
+            'banner form';
+    }
+}
+
+.hero__text {
+    grid-area: text;
+}
+
+.hero__heading {
+    font-family: 'OpenSans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 34px;
+    line-height: 46px;
+    color: #1A1A1A;
+    margin-bottom: 14px;
+}
+
+.hero__heading_highlight {
+    color: #EF5537;
+}
+
+.hero__description {
+    font-family: 'OpenSans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 32px;
+    color: #1A1A1A;
+}
+
+@media screen and (min-width: 1441px) {
+    .hero__text {
+        text-align: center;
+    }
+
+    .hero__heading {
+        font-size: 62px;
+        line-height: 64px;
+    }
+
+    .hero__description {
+        font-size: 24px;
+        line-height: 32px;
+    }
+}
+
+/* Hero banner */
+
+.hero__banner {
+    position: relative;
+    grid-area: banner;
+}
+
+@media (min-width: 1441px) {
+    .hero__banner {
+        align-self: center;
+    }
+}
+
+.hero__banner-btn {
+    width: 50px;
+    height: 50px;
+    border: 1px solid #CACACA;
+    border-radius: 50%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    left: 50%;
+    top: 50%;
+    margin-left: -22px;
+    margin-top: 26px;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 1441px) {
+    .hero__banner-btn {
+        margin-left: -178px;
+        margin-top: 2px;
+        width: 100px;
+        height: 100px;
+    }
+
+    .hero__banner-btn svg {
+        width: 15px;
+        height: 20px;
+    }
+}
+
+.hero__picture {}
+
+.hero__banner-img {
+    max-width: 100%;
+}
+
+/* Hero form */
+.hero__form {
+    grid-area: form;
+    padding: 20px 25px 30px 25px;
+    background: #2A2A2A;
+    display: flex;
+    flex-direction: column;
+    width: 340px;
+}
+
+@media screen and (min-width: 1441px) {
+    .hero__form {
+        margin-top: 172px;
+        width: 420px;
+        padding: 56px 40px 35px 40px;
+    }
+
+}
+
+.hero__form-heading {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 27px;
+    color: #FFFFFF;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+@media screen and (min-width: 1441px) {
+    .hero__form-heading {
+        font-size: 24px;
+        line-height: 33px;
+    }
+
+}
+
+.hero__form-elems-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 34px;
+    column-gap: 40px;
+}
+
+.hero__form-elem {
+    position: relative;
+}
+
+.hero__form-input {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #FFFFFF;
+    color: #FFFFFF;
+}
+
+@media screen and (min-width: 1441px) {
+    .hero__form-input {
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+}
+
+.hero__form-input_max-width {
+    width: 340px;
+}
+
+@media screen and (min-width: 1441px) {
+    .hero__form-input_max-width {
+        width: 415px;
+    }
+}
+
+.hero__form-input:focus {
+    outline: none;
+}
+
+.hero__form-label {
+    position: absolute;
+    bottom: 12px;
+    left: 0;
+    font-family: 'OpenSans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    color: #FFFFFF;
+    transition: 0.4s;
+}
+
+@media screen and (min-width: 1441px) {
+    .hero__form-label {
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+}
+
+.hero__form-input:focus~.hero__form-label,
+.hero__form-input:not(:placeholder-shown)~.hero__form-label {
+    top: -18px;
+    font-size: 12px;
+    color: #e0e0e0;
+}
+
+.hero__form-btn {
+    cursor: pointer;
+    font-family: 'OpenSans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    color: #FFFFFF;
+    background: transparent;
+    border: 1px solid #FFFFFF;
+    border-radius: 4px;
+    padding: 15px 22px;
+    align-self: flex-start;
+    margin-top: 30px;
+}

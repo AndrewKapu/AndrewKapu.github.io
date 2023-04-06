@@ -1,0 +1,17 @@
+.button {
+    gap: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 175.41px;
+    height: 44px;
+    background: #EF5537;
+    border-radius: 200px;
+    border: none;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 23px;
+    color: #FFFFFF;
+    cursor: pointer;
+}

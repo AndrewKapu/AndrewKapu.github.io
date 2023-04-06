@@ -1,0 +1,39 @@
+.page {
+
+}
+
+.page__header {
+    margin-top: 26px;
+    margin-bottom: 46px;
+}
+
+.page__clients {
+    margin-top: 61px;
+}
+
+.page__portfolio {
+    margin-top: 71px;
+}
+
+.page__about {
+    margin-top: 47px;
+}
+
+.page__why {
+    margin-top: 111px;
+}
+
+.page__types {
+    margin-top: 40px;
+}
+
+.page__feedback {
+    margin-top: 49px;
+}
+
+@media (min-width: 1441px) {
+    .page__feedback {
+        margin-top: 87px;
+    }
+    
+}
