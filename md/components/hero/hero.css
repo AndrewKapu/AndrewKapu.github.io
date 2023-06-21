@@ -1,0 +1,105 @@
+.hero {
+    font-family: 'SegoeUI';
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@media (max-width: 1228px) {
+    .hero {
+        flex-direction: column;
+    }
+}
+
+
+.hero__left-side {
+    width: 675px;
+}
+
+.hero__h1 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 67px;
+    color: #000000;
+}
+
+.hero__text {
+    margin: 30px 0;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 33px;
+    color: #000000;
+}
+
+.hero__form {
+    display: flex;
+}
+
+.hero__form-elem {
+    position: relative;
+}
+
+.hero__form-input {
+    width: 300px;
+    height: 55px;
+    background: #ECECEC;
+    border-radius: 10px;
+    box-sizing: border-box;
+    border: none;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 27px;
+    color: #3D3D3D;
+    padding-left: 17px;
+    margin-right: 70px;
+}
+
+.hero__form-label {
+    position: absolute;
+    left: 17px;
+    top: 11px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 27px;
+    color: #3D3D3D;
+}
+
+.hero__form-input:focus~.hero__form-label,
+.hero__form-input:not(:placeholder-shown)~.hero__form-label {
+    display: none;
+}
+
+.hero__form-input:focus~.hero__form-label {
+    display: none;
+}
+
+.hero__form-btn {
+    cursor: pointer;
+    box-sizing: border-box;
+    padding: 14px 34px;
+    border: none;
+    background: #427BBD;
+    border-radius: 10px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 27px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.hero__right-side {
+    background: url(../../assets/img/bg1.svg) no-repeat 41% 53% / 90%,
+        url(../../assets/img/bg2.svg) no-repeat 56% 53% / 95%,
+        url(../../assets/img/bg3.svg) no-repeat 0% / 100%;
+}
+
+.hero__right-side img {
+    position: relative;
+    left: 60px;
+}

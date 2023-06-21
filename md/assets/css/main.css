@@ -1,0 +1,6 @@
+@import './libs/reset.css';
+@import '../fonts/fonts.css';
+@import '../../components/container/container.css';
+@import '../../components/hero/hero.css';
+@import '../../components/prof-list/prof-list.css';
+@import '../../components/profession/profession.css';

@@ -1,0 +1,40 @@
+.profession {
+    height: 85px;
+    max-width: 428px;
+    min-width: 182px;
+    padding: 0px 12px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #427BBD;
+    border-radius: 10px;
+    font-family: 'SegoeUI';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 27px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.profession:nth-child(2) {
+    width: 312px;
+}
+
+.profession:nth-child(5) {
+    width: 409px;
+}
+
+.profession:nth-child(6) {
+    width: 240px;
+}
+
+.profession:nth-child(8) {
+    width: 260px;
+}
+
+.profession:nth-child(10) {
+    width: 328px;
+}

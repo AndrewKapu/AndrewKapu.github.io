@@ -1,0 +1,19 @@
+.prof-list {
+    font-family: 'SegoeUI';
+}
+
+.prof-list__h2 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 67px;
+    color: #000000;
+    margin-bottom: 30px;
+}
+
+.prof-list__proffesions {
+    display: flex;
+    gap: 30px 26px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
